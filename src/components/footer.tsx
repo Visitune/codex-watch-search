@@ -1,0 +1,49 @@
+import Link from "next/link";
+import { Icons } from "./icons";
+
+export function Footer() {
+  return (
+    <footer className="border-t border-[#E5E7EB] dark:border-white/[0.06] bg-white dark:bg-[#0D1420]">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid md:grid-cols-4 gap-8">
+          <div>
+            <div className="flex items-center gap-2">
+              <div className="h-8 w-8 rounded-xl bg-[#F97316] flex items-center justify-center text-white"><Icons.shield className="h-4 w-4" /></div>
+              <span className="font-extrabold tracking-tight text-sm">CODEX <span className="text-[#F97316]">WATCH</span></span>
+            </div>
+            <p className="mt-2 text-xs leading-relaxed text-[#6B7280] dark:text-white/60">Surveillance & recherche FTS hybride des textes officiels Codex Alimentarius. 0 Postgres, 100% GitHub. Source FAO/WHO.</p>
+          </div>
+          <div>
+            <div className="text-xs font-mono tracking-widest text-[#9CA3AF]">PRODUIT</div>
+            <ul className="mt-2 space-y-1 text-sm text-[#374151] dark:text-white/70">
+              <li><Link href="/" className="hover:text-[#F97316]">Catalogue</Link></li>
+              <li><Link href="/watch" className="hover:text-[#F97316]">Watch</Link></li>
+              <li><Link href="/ask" className="hover:text-[#F97316]">Ask</Link></li>
+              <li><Link href="/dashboard" className="hover:text-[#F97316]">Dashboard</Link></li>
+            </ul>
+          </div>
+          <div>
+            <div className="text-xs font-mono tracking-widest text-[#9CA3AF]">SOURCE</div>
+            <ul className="mt-2 space-y-1 text-sm text-[#374151] dark:text-white/70">
+              <li><a href="https://codex.fao.org/codex-texts/find-a-codex-text" target="_blank" className="hover:text-[#F97316] inline-flex items-center gap-1">Find a Codex text <Icons.external className="h-3 w-3" /></a></li>
+              <li><a href="https://www.fao.org/fao-who-codexalimentarius/codex-texts/en/" target="_blank" className="hover:text-[#F97316]">FAO Texts</a></li>
+              <li><a href="/api/catalog" target="_blank" className="hover:text-[#F97316]">API /catalog</a></li>
+            </ul>
+          </div>
+          <div>
+            <div className="text-xs font-mono tracking-widest text-[#9CA3AF]">STACK</div>
+            <ul className="mt-2 space-y-1 text-xs font-mono text-[#6B7280] dark:text-white/50">
+              <li>Next.js 16 • Tailwind 4</li>
+              <li>MiniSearch + sql.js • codex.db</li>
+              <li>Vercel • GitHub Actions</li>
+            </ul>
+          </div>
+        </div>
+        <div className="mt-8 pt-6 border-t border-[#E5E7EB] dark:border-white/[0.06] flex flex-col sm:flex-row gap-2 justify-between text-xs font-mono text-[#9CA3AF]">
+          <span>© 2026 Codex Watch — PRD v0.1 • Non officiel • Contenu FAO/WHO</span>
+          <a href="https://github.com/Visitune/codex-watch-search" target="_blank" className="inline-flex items-center gap-1 hover:text-[#F97316]"><Icons.external className="h-3 w-3" /> GitHub</a>
+        </div>
+      </div>
+    </footer>
+  );
+}

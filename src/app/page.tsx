@@ -3,6 +3,8 @@ import path from "path";
 import Link from "next/link";
 import { Header } from "@/components/header";
 import { Icons } from "@/components/icons";
+import { Footer } from "@/components/footer";
+import { FadeIn, Stagger, CardItem } from "@/components/animated";
 
 type RawDoc = {
   Reference: string;
@@ -76,7 +78,7 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
         </div>
 
         <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14 grid lg:grid-cols-[1.15fr_0.85fr] gap-8 items-center">
-          <div>
+          <FadeIn>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white dark:bg-white/[0.06] border border-[#E5E7EB] dark:border-white/10 shadow-sm">
               <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F97316] opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-[#F97316]" /></span>
               <span className="text-xs font-mono tracking-widest text-[#0B1120] dark:text-white/80">LIVE • FTS HYBRIDE • SQLITE + MINISEARCH</span>
@@ -101,51 +103,54 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
               </a>
             </div>
             {/* KPI */}
-            <div className="mt-8 grid grid-cols-3 gap-3 max-w-[560px]">
+            <Stagger className="mt-8 grid grid-cols-3 gap-3 max-w-[560px]">
               {[
                 { k: totalCount, l: "Textes" },
                 { k: countsByType["5"] ?? 0, l: "Standards" },
                 { k: recents, l: "Révisés ≥2025" },
               ].map((s) => (
-                <div key={s.l} className="rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-3 text-center shadow-sm">
+                <CardItem key={s.l} className="rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-3 text-center shadow-sm">
                   <div className="text-xl font-mono font-extrabold text-[#0B1120] dark:text-white">{s.k}</div>
                   <div className="text-[11px] font-mono tracking-wide text-[#6B7280] dark:text-white/60">{s.l}</div>
-                </div>
+                </CardItem>
               ))}
-            </div>
-          </div>
+            </Stagger>
+          </FadeIn>
 
           {/* Featured preview */}
-          <div className="relative">
+          <FadeIn delay={0.15} className="relative">
             <div className="absolute -inset-3 bg-gradient-to-br from-[#F97316]/10 via-transparent to-[#8B5CF6]/10 rounded-[28px] blur-xl" />
             <div className="relative rounded-[20px] bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] shadow-xl dark:shadow-none p-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-mono tracking-widest text-[#F97316]">★ À LA UNE</span>
                 <span className="text-xs font-mono text-[#9CA3AF]">EN/FR officiels</span>
               </div>
-              <div className="mt-3 grid gap-3">
+              <Stagger className="mt-3 grid gap-3">
                 {featured.map((doc) => (
-                  <Link key={doc.Reference} href={`/documents/${encodeURIComponent(doc.Reference)}`} className="group rounded-xl border border-[#E5E7EB] dark:border-white/[0.06] bg-[#F8F9FC] dark:bg-[#0B1120] p-3 flex gap-3 hover:border-[#F97316]/30 transition-colors">
-                    <div className={`h-10 w-10 rounded-xl flex items-center justify-center text-white shrink-0 ${TYPE_COLOR[String(doc.Type)] ?? "bg-[#0B1120]"}`}>
-                      <span className="text-xs font-mono font-bold">{TYPE_SHORT[String(doc.Type)]}</span>
-                    </div>
-                    <div className="min-w-0">
-                      <div className="text-xs font-mono font-bold text-[#0B1120] dark:text-white">{doc.Reference} • {doc.Committee}</div>
-                      <div className="text-sm font-semibold leading-snug text-[#0B1120] dark:text-white line-clamp-2 group-hover:text-[#F97316] transition-colors">{doc.Title}</div>
-                    </div>
-                  </Link>
+                  <CardItem key={doc.Reference}>
+                    <Link href={`/documents/${encodeURIComponent(doc.Reference)}`} className="group flex rounded-xl border border-[#E5E7EB] dark:border-white/[0.06] bg-[#F8F9FC] dark:bg-[#0B1120] p-3 gap-3 hover:border-[#F97316]/30 transition-colors">
+                      <div className={`h-10 w-10 rounded-xl flex items-center justify-center text-white shrink-0 ${TYPE_COLOR[String(doc.Type)] ?? "bg-[#0B1120]"}`}>
+                        <span className="text-xs font-mono font-bold">{TYPE_SHORT[String(doc.Type)]}</span>
+                      </div>
+                      <div className="min-w-0">
+                        <div className="text-xs font-mono font-bold text-[#0B1120] dark:text-white">{doc.Reference} • {doc.Committee}</div>
+                        <div className="text-sm font-semibold leading-snug text-[#0B1120] dark:text-white line-clamp-2 group-hover:text-[#F97316] transition-colors">{doc.Title}</div>
+                      </div>
+                    </Link>
+                  </CardItem>
                 ))}
-              </div>
+              </Stagger>
               <div className="mt-3 flex items-center justify-between text-xs font-mono text-[#6B7280] dark:text-white/50">
                 <span>PDF via /restapi/searchstandard/</span><span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
               </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </div>
 
       {/* Search */}
-      <div id="search" className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <FadeIn delay={0.1}>
+        <div id="search" className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <form className="rounded-[20px] bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] shadow-sm dark:shadow-none p-4 md:p-5">
           <div className="flex flex-col lg:flex-row gap-3">
             <div className="flex-1 relative">
@@ -196,19 +201,19 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
         </div>
 
         {filtered.length === 0 ? (
-          <div className="mt-6 rounded-2xl border border-dashed border-[#E5E7EB] dark:border-white/10 bg-white dark:bg-[#131B2C] p-10 text-center">
+          <FadeIn className="mt-6 rounded-2xl border border-dashed border-[#E5E7EB] dark:border-white/10 bg-white dark:bg-[#131B2C] p-10 text-center">
             <div className="mx-auto h-12 w-12 rounded-2xl bg-[#F8F9FC] dark:bg-white/[0.06] flex items-center justify-center text-[#9CA3AF]"><Icons.search className="h-6 w-6" /></div>
             <div className="mt-3 font-bold text-[#0B1120] dark:text-white">Aucun résultat</div>
             <p className="text-sm text-[#6B7280] dark:text-white/60">Essayez un autre mot-clé, un comité ou un type différent.</p>
-          </div>
+          </FadeIn>
         ) : (
-          <div className="mt-4 grid gap-3">
+          <Stagger className="mt-4 grid gap-3">
             {filtered.slice(0, 100).map((doc) => {
               const en = pdfUrl(doc, "en");
               const fr = pdfUrl(doc, "fr");
               const isRecent = (doc.LastModified ?? 0) >= 2025;
               return (
-                <div key={doc.Reference} className="group relative rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-4 md:p-5 overflow-hidden hover:border-[#F97316]/30 dark:hover:border-[#F97316]/30 hover:shadow-md hover:shadow-[#F97316]/[0.06] transition-all">
+                <CardItem key={doc.Reference} className="group relative rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-4 md:p-5 overflow-hidden hover:border-[#F97316]/30 dark:hover:border-[#F97316]/30 hover:shadow-md hover:shadow-[#F97316]/[0.06] transition-all">
                   <div className={`absolute left-0 top-0 bottom-0 w-[3px] ${isRecent ? "bg-emerald-500" : "bg-[#E5E7EB] dark:bg-white/10"} group-hover:bg-[#F97316] transition-colors`} />
                   <div className="flex flex-wrap gap-2 items-center">
                     <span className={`px-2.5 py-1 rounded-full text-xs font-mono font-bold tracking-wide border ${TYPE_COLOR[String(doc.Type)] ?? "bg-[#0B1120] text-white"}`}>{doc.Reference}</span>
@@ -228,22 +233,14 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
                     </Link>
                     <span className="ml-auto hidden md:inline-flex items-center gap-1 text-xs font-mono text-[#9CA3AF]">ID {doc.SharePointId} • <span className="h-2 w-2 rounded-full bg-emerald-500 inline-block" /> officiel</span>
                   </div>
-                </div>
+                </CardItem>
               );
             })}
-          </div>
+          </Stagger>
         )}
-
-        <footer className="mt-10 rounded-2xl border border-[#E5E7EB] dark:border-white/[0.06] bg-white dark:bg-[#131B2C] p-4 flex flex-col md:flex-row gap-3 items-start md:items-center justify-between">
-          <div className="text-xs leading-relaxed text-[#6B7280] dark:text-white/60">
-            Source: <a className="underline decoration-[#F97316]/40 underline-offset-4 hover:text-[#F97316]" href="https://codex.fao.org/codex-texts/find-a-codex-text" target="_blank">codex.fao.org — Find a Codex text</a> • Données <code className="px-1 py-0.5 rounded bg-[#F8F9FC] dark:bg-white/[0.06] border">catalog-snapshot.json</code> + <code className="px-1 py-0.5 rounded bg-[#F8F9FC] dark:bg-white/[0.06] border">codex.db + search-index.json</code> (hybride GitHub)
-          </div>
-          <div className="flex gap-2">
-            <Link href="/watch" className="h-9 inline-flex items-center gap-2 px-4 rounded-full bg-[#0B1120] dark:bg-white text-white dark:text-[#0B1120] text-xs font-bold">Watch <Icons.clock className="h-4 w-4" /></Link>
-            <Link href="/dashboard" className="h-9 inline-flex items-center gap-2 px-4 rounded-full bg-white dark:bg-[#131B2C] border text-xs font-bold">Dashboard <Icons.chart className="h-4 w-4" /></Link>
-          </div>
-        </footer>
-      </div>
+        </div>
+      </FadeIn>
+      <Footer />
     </div>
   );
 }
