@@ -77,8 +77,8 @@ export async function GET(req: Request) {
     }
   }
 
-  // Si DATABASE_URL présent (legacy Vercel Postgres) → Postgres FTS
-  if (process.env.DATABASE_URL) {
+  // Postgres legacy désactivé par défaut (hybride GitHub). Activer seulement si USE_POSTGRES=1
+  if (process.env.DATABASE_URL && process.env.USE_POSTGRES === "1") {
     try {
       const postgres = (await import("postgres")).default;
       const sql = postgres(process.env.DATABASE_URL, { ssl: "require", max: 1 });
