@@ -12,23 +12,31 @@ if (!fs.existsSync(src)) {
   process.exit(1);
 }
 const raw = JSON.parse(fs.readFileSync(src, "utf-8"));
-const docs = (raw.standards ?? raw.Standards ?? []).map((d, id) => ({
-  id,
-  Reference: d.Reference,
-  Title: d.Title,
-  Committee: d.Committee,
-  Type: d.Type,
-  LastModified: d.LastModified,
-  Description: d.Description,
-  SharePointId: d.SharePointId,
-}));
+const samplesDir = path.join(process.cwd(), "data", "samples");
+const docs = (raw.standards ?? raw.Standards ?? []).map((d, id) => {
+  const key = d.Reference.replace(/[^A-Za-z0-9]/g, "_") + "_en.txt";
+  let Text = "";
+  const samplePath = path.join(samplesDir, key);
+  if (fs.existsSync(samplePath)) Text = fs.readFileSync(samplePath, "utf-8").slice(0, 12000);
+  return {
+    id,
+    Reference: d.Reference,
+    Title: d.Title,
+    Committee: d.Committee,
+    Type: d.Type,
+    LastModified: d.LastModified,
+    Description: d.Description,
+    SharePointId: d.SharePointId,
+    Text,
+  };
+});
 
-// MiniSearch: tokenise fr+en, field weights
+// MiniSearch: tokenise fr+en, field weights — Text boosté mais moins que Reference
 const mini = new MiniSearch({
-  fields: ["Reference", "Title", "Committee"],
+  fields: ["Reference", "Title", "Committee", "Text"],
   storeFields: ["Reference", "Title", "Committee", "Type", "LastModified", "Description", "SharePointId"],
   searchOptions: {
-    boost: { Reference: 3, Title: 2, Committee: 1 },
+    boost: { Reference: 5, Title: 3, Committee: 1.5, Text: 1 },
     prefix: true,
     fuzzy: 0.2,
   },
@@ -42,7 +50,8 @@ fs.mkdirSync(path.dirname(outMeta), { recursive: true });
 fs.writeFileSync(outMeta, serialized, "utf-8");
 
 // Also write a tiny meta for UI
-const meta = { count: docs.length, fields: ["Reference","Title","Committee"], generatedAt: new Date().toISOString() };
+const withText = docs.filter((d) => d.Text).length;
+const meta = { count: docs.length, withText, fields: ["Reference","Title","Committee","Text"], generatedAt: new Date().toISOString() };
 fs.writeFileSync(path.join(process.cwd(), "public", "search-meta.json"), JSON.stringify(meta, null, 2), "utf-8");
 
 console.log(`MiniSearch index: ${docs.length} docs → ${out} (${(serialized.length/1024).toFixed(1)} KB)`);

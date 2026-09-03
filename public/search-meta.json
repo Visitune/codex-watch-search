@@ -1,9 +1,11 @@
 {
   "count": 401,
+  "withText": 3,
   "fields": [
     "Reference",
     "Title",
-    "Committee"
+    "Committee",
+    "Text"
   ],
-  "generatedAt": "2026-09-03T08:51:42.760Z"
+  "generatedAt": "2026-09-03T09:04:38.331Z"
 }

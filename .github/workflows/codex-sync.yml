@@ -1,0 +1,33 @@
+name: Codex Sync (catalog + FTS hybride)
+on:
+  schedule:
+    - cron: "15 6 * * *" # après Vercel cron 06:00 UTC, 06:15
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Fetch catalog snapshot
+        run: node scripts/poc_fetch.mjs
+      - name: Build MiniSearch + SQLite
+        run: |
+          npm run build:index
+          npm run build:db
+      - name: Commit if changed
+        run: |
+          git config user.name "codex-bot"
+          git config user.email "bot@codex.watch"
+          git add data/catalog-snapshot.json data/codex.db data/search-index.json public/codex.db public/search-index.json public/search-meta.json || true
+          git diff --cached --quiet || git commit -m "chore: sync Codex catalog $(date -u +%F) — $(jq '.totalCount // .count' data/catalog-snapshot.json) docs"
+          git push || echo "no push"

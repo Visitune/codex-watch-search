@@ -24,6 +24,7 @@ export function Header() {
           {[
             { href: "/", label: "Catalogue" },
             { href: "/watch", label: "Watch" },
+            { href: "/ask", label: "Ask" },
           ].map((l) => (
             <Link key={l.href} href={l.href} className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${isActive(l.href) ? "bg-[#0B1120] dark:bg-white text-white dark:text-[#0B1120]" : "text-[#374151] dark:text-white/70 hover:bg-black/[0.06] dark:hover:bg-white/[0.06]"}`}>
               {l.label}
