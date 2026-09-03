@@ -1,0 +1,11 @@
+import { buildDiff } from "../src/lib/diff.ts";
+const txt = "This is the first paragraph. It has some content.";
+const txt2 = "This is the first paragraph. It has MODIFIED content. And a new sentence.";
+const result = buildDiff(txt, txt2, "CXC_1_1969");
+console.log("changed:", result.changed);
+console.log("added:", result.added);
+console.log("removed:", result.removed);
+console.log("modified:", result.modified);
+console.log("summary:", result.humanSummary);
+console.log("--- readable ---");
+console.log(result.readable);

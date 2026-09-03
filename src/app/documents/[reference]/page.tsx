@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/header";
 import { Icons } from "@/components/icons";
+import { DiffCard } from "@/components/diff-card";
 import { buildOfficialUrl, buildFaoLegacyUrl } from "@/lib/codex-connector";
 
 type RawDoc = {
@@ -80,14 +81,7 @@ export default async function DocPage({ params }: { params: Promise<{ reference:
           </a>
         </div>
 
-        <div className="mt-4 rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-5">
-          <h3 className="text-sm font-bold text-[#0B1120] dark:text-white flex items-center gap-2"><Icons.file className="h-4 w-4 text-[#F97316]" /> Évolution du texte</h3>
-          <p className="mt-2 text-xs leading-relaxed text-[#6B7280] dark:text-white/60">Diff par section (PRD §15) — compare le contenu extrait. <a href={`/api/documents/${encodeURIComponent(doc.Reference)}/diff`} target="_blank" className="underline decoration-[#F97316]/30 hover:text-[#F97316]">Voir le diff JSON</a> (ADDED/REMOVED/MODIFIED). Pour les PDF scannés, le diff retombe sur <code>FULL</code>.</p>
-          <div className="mt-3 flex gap-2">
-            <a href={`/api/documents/${encodeURIComponent(doc.Reference)}/diff`} target="_blank" className="h-8 inline-flex items-center gap-1.5 px-3 rounded-full bg-[#0B1120] dark:bg-white text-white dark:text-[#0B1120] text-xs font-bold">Diff par section <Icons.external className="h-3.5 w-3.5" /></a>
-            <a href={buildOfficialUrl(doc.Reference)} target="_blank" className="h-8 inline-flex items-center gap-1.5 px-3 rounded-full border text-xs font-bold">Officiel FAO</a>
-          </div>
-        </div>
+        <DiffCard reference={doc.Reference} />
 
         <div className="mt-4 rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-5">
           <h3 className="text-sm font-bold text-[#0B1120] dark:text-white">Informations</h3>
