@@ -41,7 +41,12 @@ export default function Dashboard() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-[#F97316]"><span className="h-[2px] w-8 bg-[#F97316]" /> TABLEAU DE BORD</div>
         <h1 className="mt-2 text-[28px] md:text-[40px] font-extrabold tracking-tight text-[#0B1120] dark:text-white">Vue d’ensemble du corpus.</h1>
-        <p className="text-sm text-[#6B7280] dark:text-white/60">Mise à jour {fetchedAt ? new Date(fetchedAt).toLocaleDateString("fr-FR") : "—"} • {docs.length} textes officiels • Source FAO/WHO • Recherche plein texte EN/FR</p>
+        <p className="mt-2 max-w-[820px] text-sm leading-relaxed text-[#6B7280] dark:text-white/60">
+          Corpus officiel du Codex Alimentarius — <strong className="text-[#0B1120] dark:text-white">{docs.length} textes</strong> (normes, lignes directrices, codes d’usage et limites de résidus) tenus par la FAO/OMS. Mise à jour le{" "}
+          {fetchedAt ? new Date(fetchedAt).toLocaleDateString("fr-FR") : "—"} depuis{" "}
+          <a href="https://codex.fao.org/" target="_blank" className="underline decoration-[#F97316]/30 underline-offset-2 hover:text-[#F97316]">codex.fao.org</a>.
+          Utile pour retrouver en 1 clic une référence, filtrer par comité ou type, et chercher en plein texte (<code className="px-1 py-0.5 rounded bg-white dark:bg-white/[0.06] border text-xs">EN/FR</code>) dans les titres et le contenu des PDF officiels.
+        </p>
 
         <div className="mt-6 grid md:grid-cols-4 gap-3">
           {[
