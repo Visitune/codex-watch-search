@@ -80,27 +80,23 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
         <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14 grid lg:grid-cols-[1.15fr_0.85fr] gap-8 items-center">
           <FadeIn>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white dark:bg-white/[0.06] border border-[#E5E7EB] dark:border-white/10 shadow-sm">
-              <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F97316] opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-[#F97316]" /></span>
-              <span className="text-xs font-mono tracking-widest text-[#0B1120] dark:text-white/80">LIVE • FTS HYBRIDE • SQLITE + MINISEARCH</span>
-              <span className="hidden sm:inline-flex ml-1 px-1.5 py-0.5 rounded bg-[#F97316] text-white text-[10px] font-mono font-bold tracking-wide">V1</span>
+              <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75" /><span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" /></span>
+              <span className="text-xs font-mono tracking-widest text-[#0B1120] dark:text-white/80">CORPUS OFFICIEL • 401 TEXTES • MISE À JOUR QUOTIDIENNE</span>
             </div>
             <h1 className="mt-5 text-[34px] sm:text-[48px] md:text-[56px] font-extrabold leading-[0.9] tracking-[-0.03em] text-[#0B1120] dark:text-white">
               Le Codex <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F97316] via-[#F97316] to-[#8B5CF6]">enfin</span>
               <br />cherchable.
             </h1>
             <p className="mt-4 max-w-[640px] text-[16px] md:text-[18px] leading-relaxed text-[#374151] dark:text-white/70">
-              401 textes officiels • <strong className="text-[#0B1120] dark:text-white">MiniSearch + SQLite</strong> dans GitHub, 0 Postgres. Filtrez par référence, comité, type et ouvrez le PDF officiel EN/FR en 1 clic — avec traçabilité source.
+              Recherche plein texte dans les <strong className="text-[#0B1120] dark:text-white">standards, guidelines et codes of practice</strong> du Codex Alimentarius. Filtrez et ouvrez le PDF officiel EN/FR en 1 clic.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               <Link href="#search" className="h-11 px-6 rounded-full bg-[#F97316] text-white font-bold text-sm shadow-lg shadow-[#F97316]/20 hover:shadow-[#F97316]/30 hover:-translate-y-[1px] transition-all inline-flex items-center gap-2">
                 Commencer la recherche <Icons.arrowRight className="h-4 w-4" />
               </Link>
-              <Link href="/dashboard" className="h-11 px-5 rounded-full bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/10 text-sm font-bold inline-flex items-center gap-2 hover:bg-[#F8F9FC] dark:hover:bg-white/[0.06] transition-colors">
-                <Icons.chart className="h-4 w-4 text-[#F97316]" /> Dashboard
+              <Link href="/watch" className="h-11 px-5 rounded-full bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/10 text-sm font-bold inline-flex items-center gap-2 hover:bg-[#F8F9FC] dark:hover:bg-white/[0.06] transition-colors">
+                <Icons.clock className="h-4 w-4 text-[#F97316]" /> Nouveautés
               </Link>
-              <a href="https://github.com/Visitune/codex-watch-search" target="_blank" className="h-11 px-5 rounded-full bg-[#0B1120] dark:bg-white text-white dark:text-[#0B1120] text-sm font-mono font-bold inline-flex items-center gap-2">
-                GitHub <Icons.external className="h-4 w-4" />
-              </a>
             </div>
             {/* KPI */}
             <Stagger className="mt-8 grid grid-cols-3 gap-3 max-w-[560px]">
@@ -141,7 +137,7 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
                 ))}
               </Stagger>
               <div className="mt-3 flex items-center justify-between text-xs font-mono text-[#6B7280] dark:text-white/50">
-                <span>PDF via /restapi/searchstandard/</span><span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                <span>Accès direct au PDF officiel</span><span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
               </div>
             </div>
           </FadeIn>
@@ -195,7 +191,7 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
         <div className="mt-4 flex items-center justify-between">
           <div className="text-sm text-[#6B7280] dark:text-white/60">
             <span className="font-mono font-bold text-[#0B1120] dark:text-white">{filtered.length}</span> résultat(s) {q && <>pour <span className="px-1.5 py-0.5 rounded bg-[#F97316]/10 text-[#F97316] font-mono text-xs">{q}</span></>}
-            <span className="hidden sm:inline"> • SQLite + MiniSearch hybride • PDFs officiels FAO</span>
+            <span className="hidden sm:inline"> • Textes officiels FAO/WHO</span>
           </div>
           <span className="text-xs font-mono text-[#9CA3AF]">Affiche 100 / {filtered.length}</span>
         </div>
@@ -231,7 +227,7 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
                     <Link href={`/documents/${encodeURIComponent(doc.Reference)}`} className="h-8 inline-flex items-center gap-1.5 px-3 rounded-full border border-[#E5E7EB] dark:border-white/10 text-xs font-bold hover:bg-[#F8F9FC] dark:hover:bg-white/[0.06] transition-colors">
                       Détails <Icons.arrowRight className="h-3.5 w-3.5" />
                     </Link>
-                    <span className="ml-auto hidden md:inline-flex items-center gap-1 text-xs font-mono text-[#9CA3AF]">ID {doc.SharePointId} • <span className="h-2 w-2 rounded-full bg-emerald-500 inline-block" /> officiel</span>
+                    <span className="ml-auto hidden md:inline-flex items-center gap-1 text-xs font-mono text-[#9CA3AF]"><span className="h-2 w-2 rounded-full bg-emerald-500 inline-block" /> Officiel</span>
                   </div>
                 </CardItem>
               );

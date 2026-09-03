@@ -33,16 +33,16 @@ export default function Dashboard() {
     <div className="min-h-screen bg-[#F8F9FC] dark:bg-[#0B1120]">
       <Header />
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-[#F97316]"><span className="h-[2px] w-8 bg-[#F97316]" /> DASHBOARD • CORPUS & VEILLE</div>
-        <h1 className="mt-2 text-[28px] md:text-[40px] font-extrabold tracking-tight text-[#0B1120] dark:text-white">401 textes, 0 angle mort.</h1>
-        <p className="text-sm text-[#6B7280] dark:text-white/60">Snapshot {fetchedAt ? new Date(fetchedAt).toLocaleString("fr-FR") : "—"} • Index hybride MiniSearch + SQLite • <code className="px-1 py-0.5 rounded bg-white dark:bg-white/[0.06] border">data/corpus</code> {Object.keys(corpus).length} PDFs indexés</p>
+        <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-[#F97316]"><span className="h-[2px] w-8 bg-[#F97316]" /> TABLEAU DE BORD</div>
+        <h1 className="mt-2 text-[28px] md:text-[40px] font-extrabold tracking-tight text-[#0B1120] dark:text-white">Vue d’ensemble du corpus.</h1>
+        <p className="text-sm text-[#6B7280] dark:text-white/60">Mise à jour {fetchedAt ? new Date(fetchedAt).toLocaleDateString("fr-FR") : "—"} • {docs.length} textes officiels • Source FAO/WHO • Recherche plein texte EN/FR</p>
 
         <div className="mt-6 grid md:grid-cols-4 gap-3">
           {[
             { label: "Corpus", value: docs.length, sub: "textes officiels", icon: Icons.file },
-            { label: "Indexés Text", value: `${meta.withText ?? 0} (${coverage}%)`, sub: "recherche plein texte", icon: Icons.search },
-            { label: "SQLite", value: "100 KB", sub: "codex.db GitHub", icon: Icons.chart },
-            { label: "Watch", value: bulletin?.recents?.length ?? 0, sub: "révisés ≥2025", icon: Icons.clock },
+            { label: "Couverture", value: `${coverage}%`, sub: "indexation plein texte", icon: Icons.search },
+            { label: "Comités", value: Object.keys(byCommittee).length, sub: "actifs", icon: Icons.chart },
+            { label: "Nouveautés", value: bulletin?.recents?.length ?? 0, sub: "révisés ≥2025", icon: Icons.clock },
           ].map((k) => (
             <div key={k.label} className="rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-4 flex items-center gap-3">
               <div className="h-10 w-10 rounded-xl bg-[#F97316]/10 flex items-center justify-center text-[#F97316]"><k.icon className="h-5 w-5" /></div>
@@ -83,17 +83,14 @@ export default function Dashboard() {
         </div>
 
         <div className="mt-6 rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-5">
-          <h2 className="font-bold text-[#0B1120] dark:text-white">Progression indexation Text</h2>
+          <h2 className="font-bold text-[#0B1120] dark:text-white">Couverture de la recherche plein texte</h2>
           <div className="mt-2 h-3 rounded-full bg-[#F1F4F9] dark:bg-white/[0.06] overflow-hidden">
             <div className="h-full bg-gradient-to-r from-[#F97316] to-[#8B5CF6]" style={{ width: `${coverage}%` }} />
           </div>
           <div className="mt-2 flex justify-between text-xs font-mono text-[#6B7280] dark:text-white/60">
-            <span>{meta.withText ?? 0} / {docs.length} PDFs extraits (15K chars chacun)</span><span>{coverage}%</span>
+            <span>{meta.withText ?? 0} / {docs.length} textes indexés</span><span>{coverage}%</span>
           </div>
-          <div className="mt-3 flex gap-2 text-xs">
-            <code className="px-2 py-1 rounded bg-[#F8F9FC] dark:bg-white/[0.06] border">LIMIT=40 node scripts/extract-all.mjs</code>
-            <code className="px-2 py-1 rounded bg-[#F8F9FC] dark:bg-white/[0.06] border">npm run build:index</code>
-          </div>
+          <p className="mt-2 text-xs leading-relaxed text-[#6B7280] dark:text-white/60">La recherche s’enrichit au fur et à mesure de l’indexation du contenu des PDF. Les métadonnées (référence, titre, comité) sont déjà intégralement cherchables.</p>
         </div>
 
         <div className="mt-6 flex gap-2">

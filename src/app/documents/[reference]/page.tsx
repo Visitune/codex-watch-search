@@ -46,7 +46,7 @@ export default function DocPage({ params }: { params: { reference: string } }) {
             <span className="px-3 py-1 rounded-full bg-[#F8F9FC] dark:bg-white/[0.06] border text-xs font-mono">{doc.Committee} • Adopté {doc.AdoptedYear ?? "—"} • Modifié {doc.LastModified ?? "—"}</span>
           </div>
           <h1 className="mt-3 text-[22px] md:text-[26px] font-extrabold leading-tight text-[#0B1120] dark:text-white">{doc.Title}</h1>
-          <p className="mt-2 text-sm text-[#6B7280] dark:text-white/60">Source officielle FAO/Codex • ID SharePoint {doc.SharePointId} • URLs signées <code className="px-1 py-0.5 rounded bg-[#F8F9FC] dark:bg-white/[0.06] border">/restapi/searchstandard/</code></p>
+          <p className="mt-2 text-sm text-[#6B7280] dark:text-white/60">Texte officiel Codex Alimentarius • Comité {doc.Committee} • Adopté {doc.AdoptedYear ?? "—"} • Dernière révision {doc.LastModified ?? "—"}</p>
         </div>
 
         <div className="mt-4 rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-6">
@@ -55,27 +55,23 @@ export default function DocPage({ params }: { params: { reference: string } }) {
             {langs.map((lang) => {
               const url = pdfUrl(doc, lang);
               const has = !!doc.Description?.[lang];
+              const label = { en: "Anglais", fr: "Français", es: "Espagnol", zh: "Chinois", ru: "Russe", ar: "Arabe" }[lang] ?? lang;
               return (
                 <div key={lang} className="rounded-xl border border-[#E5E7EB] dark:border-white/[0.06] bg-[#F8F9FC] dark:bg-[#0B1120] p-4 flex items-center justify-between">
                   <div>
-                    <div className="text-sm font-mono font-bold uppercase">{lang} <span className="font-sans font-normal text-xs text-[#6B7280] dark:text-white/50">{doc.Description?.[lang] || "indisponible"}</span></div>
-                    <div className="text-xs font-mono text-[#9CA3AF]">lang={lang} & id={doc.SharePointId}</div>
+                    <div className="text-sm font-bold text-[#0B1120] dark:text-white">{label} <span className="ml-1 px-1.5 py-0.5 rounded bg-white dark:bg-white/[0.06] border text-xs font-mono uppercase">{lang}</span></div>
+                    <div className="text-xs text-[#6B7280] dark:text-white/60">{has ? "Disponible" : "Non disponible"}</div>
                   </div>
                   {has && url ? <a href={url} target="_blank" rel="noopener noreferrer" className="h-8 inline-flex items-center gap-1.5 px-3 rounded-full bg-[#F97316] text-white text-xs font-bold hover:bg-[#EA6A0A]">Ouvrir <Icons.external className="h-3.5 w-3.5" /></a> : <span className="text-xs px-2.5 py-1 rounded-full bg-white dark:bg-white/[0.06] border text-[#9CA3AF]">Non dispo</span>}
                 </div>
               );
             })}
           </div>
-          <div className="mt-4 flex gap-2">
-            <a href={pdfUrl(doc, "en") ?? "#"} target="_blank" className={`h-9 px-4 rounded-full text-xs font-bold inline-flex items-center gap-1.5 ${pdfUrl(doc, "en") ? "bg-[#0B1120] dark:bg-white text-white dark:text-[#0B1120]" : "bg-[#F8F9FC] border text-[#9CA3AF] pointer-events-none"}`}>Extraire EN <Icons.search className="h-4 w-4" /></a>
-            <a href={pdfUrl(doc, "fr") ?? "#"} target="_blank" className="h-9 px-4 rounded-full bg-white dark:bg-white/[0.06] border text-xs font-bold inline-flex items-center gap-1.5">API /extract <Icons.file className="h-4 w-4" /></a>
-          </div>
-          <p className="mt-3 text-xs font-mono text-[#9CA3AF]">Test extraction: <code>/api/documents/{encodeURIComponent(doc.Reference)}/extract?lang=en</code> → SHA-256 + preview 2000c (pdf-parse)</p>
         </div>
 
-        <div className="mt-4 rounded-2xl bg-[#0B1120] dark:bg-[#131B2C] border border-white/10 p-5 text-white">
-          <h3 className="font-mono text-xs tracking-widest text-white/60">JSON BRUT (catalogue)</h3>
-          <pre className="mt-2 text-xs leading-relaxed overflow-auto max-h-[420px] p-3 rounded-xl bg-white/[0.06] border border-white/10">{JSON.stringify(doc, null, 2)}</pre>
+        <div className="mt-4 rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-5">
+          <h3 className="text-sm font-bold text-[#0B1120] dark:text-white">Informations</h3>
+          <p className="mt-2 text-xs leading-relaxed text-[#6B7280] dark:text-white/60">Texte officiel du Codex Alimentarius. Pour toute question d’interprétation, référez-vous au document PDF officiel ci-dessus. Ce portail est un service indépendant de veille et de recherche.</p>
         </div>
       </div>
     </div>
