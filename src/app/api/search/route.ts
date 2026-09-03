@@ -10,13 +10,13 @@ function fileSearch(q: string, type: string | null, committee: string | null, st
   if (type) filtered = filtered.filter((s) => String(s.Type) === type);
   if (committee) filtered = filtered.filter((s) => s.Committee === committee);
   if (!q) return { count: filtered.length, results: filtered.slice(0, 100), ranked: false as const, source: "file_fallback" as const };
-  // try MiniSearch first (hybrid A+B)
+  // try MiniSearch first (hybride Text)
   const mini = miniSearch(q, filtered);
-  if (mini) {
+  if (mini && mini.length > 0) {
     let results = mini;
     if (type) results = results.filter((s) => String(s.Type) === type);
     if (committee) results = results.filter((s) => s.Committee === committee);
-    return { count: results.length, results: results.slice(0, 100), ranked: true as const, source: "minisearch" as const };
+    if (results.length > 0) return { count: results.length, results: results.slice(0, 100), ranked: true as const, source: "minisearch" as const };
   }
   // fallback includes scoring
   const scored = filtered

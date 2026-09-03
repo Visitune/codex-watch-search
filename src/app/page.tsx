@@ -5,6 +5,7 @@ import { Header } from "@/components/header";
 import { Icons } from "@/components/icons";
 import { Footer } from "@/components/footer";
 import { FadeIn, Stagger, CardItem } from "@/components/animated";
+import { miniSearch } from "@/lib/search";
 
 type RawDoc = {
   Reference: string;
@@ -49,7 +50,21 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
   let filtered = standards;
   if (type) filtered = filtered.filter((s) => String(s.Type) === type);
   if (committee) filtered = filtered.filter((s) => s.Committee === committee);
-  if (q) filtered = filtered.filter((s) => s.Reference.toLowerCase().includes(q) || s.Title.toLowerCase().includes(q) || s.Committee.toLowerCase().includes(q));
+  if (q) {
+    // Hybride MiniSearch (Text) + fallback includes (même logique que /api/search)
+    const mini = miniSearch(q, filtered as unknown as Parameters<typeof miniSearch>[1]);
+    if (mini && mini.length > 0) {
+      filtered = mini as unknown as RawDoc[];
+    } else {
+      const nq = q.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      filtered = filtered.filter((s) => {
+        const ref = s.Reference.toLowerCase();
+        const title = s.Title.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        const com = s.Committee.toLowerCase();
+        return ref.includes(nq) || ref.includes(q) || title.includes(nq) || title.includes(q) || com.includes(q);
+      });
+    }
+  }
 
   const committees = [...new Set(standards.map((s) => s.Committee).filter(Boolean))].sort();
   const countsByType = standards.reduce<Record<string, number>>((acc, s) => { const k = String(s.Type); acc[k] = (acc[k] || 0) + 1; return acc; }, {});

@@ -17,9 +17,9 @@ function loadMini(): MiniSearch | null {
   if (cached && cachedMtime === mtime) return cached;
   const raw = fs.readFileSync(p, "utf-8");
   cached = MiniSearch.loadJSON(raw, {
-    fields: ["Reference", "Title", "Committee"],
+    fields: ["Reference", "Title", "Committee", "Text"],
     storeFields: ["Reference", "Title", "Committee", "Type", "LastModified", "Description", "SharePointId"],
-    searchOptions: { boost: { Reference: 3, Title: 2, Committee: 1 }, prefix: true, fuzzy: 0.2 },
+    searchOptions: { boost: { Reference: 5, Title: 3, Committee: 1.5, Text: 1 }, prefix: true, fuzzy: 0.2 },
   });
   cachedMtime = mtime;
   return cached;
@@ -35,13 +35,19 @@ export type SearchDoc = {
   SharePointId: number;
 };
 
+function normalize(s: string): string {
+  return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
 export function miniSearch(q: string, allDocs: SearchDoc[]): SearchDoc[] | null {
   const mini = loadMini();
   if (!mini) return null;
   if (!q) return null;
-  const results = mini.search(q);
+  const nq = normalize(q);
+  let results = mini.search(nq);
+  // fallback: si 0 et q sans accent diffère, essayer brut
+  if (results.length === 0 && nq !== q.toLowerCase()) results = mini.search(q.toLowerCase());
   const byRef = new Map(allDocs.map((d) => [d.Reference, d]));
-  // Map back to full docs, preserve MiniSearch ranking
   return results.map((r) => byRef.get(r.Reference as string) ?? (r as unknown as SearchDoc)).filter(Boolean) as SearchDoc[];
 }
 
