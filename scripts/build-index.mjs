@@ -15,14 +15,27 @@ const raw = JSON.parse(fs.readFileSync(src, "utf-8"));
 const samplesDir = path.join(process.cwd(), "data", "samples");
 const corpusDir = path.join(process.cwd(), "data", "corpus");
 const docs = (raw.standards ?? raw.Standards ?? []).map((d, id) => {
-  const key = d.Reference.replace(/[^A-Za-z0-9]/g, "_") + "_en.txt";
   let Text = "";
-  // corpus prioritaire (extract-all), fallback samples
-  for (const dir of [corpusDir, samplesDir]) {
-    const p = path.join(dir, d.Reference.replace(/[^A-Za-z0-9]/g, "_") + ".txt");
-    const p2 = path.join(dir, key);
-    if (fs.existsSync(p)) { Text = fs.readFileSync(p, "utf-8").slice(0, 15000); break; }
-    if (fs.existsSync(p2)) { Text = fs.readFileSync(p2, "utf-8").slice(0, 15000); break; }
+  // Concatène EN + FR si disponibles (bilingue FR/EN)
+  const base = d.Reference.replace(/[^A-Za-z0-9]/g, "_");
+  const candidates = [
+    path.join(corpusDir, `${base}.txt`),
+    path.join(corpusDir, `${base}_fr.txt`),
+    path.join(corpusDir, `${base}_en.txt`),
+    path.join(samplesDir, `${base}_en.txt`),
+    path.join(samplesDir, `${base}.txt`),
+  ];
+  const parts = [];
+  for (const p of candidates) if (fs.existsSync(p)) parts.push(fs.readFileSync(p, "utf-8").slice(0, 8000));
+  // aussi cherche en FR dans samples/corpus avec suffixe
+  if (parts.length) Text = parts.join(" \n ").slice(0, 15000);
+  // fallback ancien nom
+  if (!Text) {
+    const key = `${base}_en.txt`;
+    for (const dir of [corpusDir, samplesDir]) {
+      const p = path.join(dir, key);
+      if (fs.existsSync(p)) { Text = fs.readFileSync(p, "utf-8").slice(0, 15000); break; }
+    }
   }
   return {
     id,
@@ -37,6 +50,10 @@ const docs = (raw.standards ?? raw.Standards ?? []).map((d, id) => {
   };
 });
 
+// Normalisation accents + casse pour FR/EN
+const normalize = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+const processTerm = (term) => normalize(term);
+
 // MiniSearch: tokenise fr+en, field weights — Text boosté mais moins que Reference
 const mini = new MiniSearch({
   fields: ["Reference", "Title", "Committee", "Text"],
@@ -46,6 +63,7 @@ const mini = new MiniSearch({
     prefix: true,
     fuzzy: 0.2,
   },
+  processTerm,
 });
 mini.addAll(docs);
 
