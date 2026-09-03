@@ -1,26 +1,71 @@
 @import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
 
+/* VisiPilot x Codex tokens — bi-mode */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --vp-bg: #F8F9FC;
+  --vp-bg-2: #FFFFFF;
+  --vp-bg-3: #F1F4F9;
+  --vp-card: #FFFFFF;
+  --vp-card-hover: #F8F9FC;
+  --vp-orange: #F97316;
+  --vp-orange-dim: rgba(249,115,22,0.10);
+  --vp-purple: #7C3AED;
+  --vp-blue: #1E40AF;
+  --vp-text-1: #0B1120;
+  --vp-text-2: #374151;
+  --vp-text-3: #6B7280;
+  --vp-border: #E5E7EB;
+  --vp-border-md: #D1D5DB;
+  --layout-max: 1280px;
+  --layout-gutter: 24px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+}
+
+.dark {
+  --vp-bg: #0B1120;
+  --vp-bg-2: #0D1420;
+  --vp-bg-3: #0F1623;
+  --vp-card: #131B2C;
+  --vp-card-hover: #1A2436;
+  --vp-orange: #F97316;
+  --vp-orange-dim: rgba(249,115,22,0.15);
+  --vp-purple: #8B5CF6;
+  --vp-blue: #1E3A8A;
+  --vp-text-1: #FFFFFF;
+  --vp-text-2: #D1D5DB;
+  --vp-text-3: #9CA3AF;
+  --vp-border: rgba(255,255,255,0.06);
+  --vp-border-md: rgba(255,255,255,0.10);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-orange: var(--vp-orange);
+  --color-brand-purple: var(--vp-purple);
+  --color-brand-blue: var(--vp-blue);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+* { scrollbar-width: thin; scrollbar-color: var(--vp-orange) transparent; }
+*::-webkit-scrollbar { width: 6px; height: 6px; }
+*::-webkit-scrollbar-thumb { background: var(--vp-orange); border-radius: 999px; }
 
+html { scroll-behavior: smooth; }
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--vp-bg);
+  color: var(--vp-text-1);
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Focus */
+:focus-visible { outline: 2px solid var(--vp-orange); outline-offset: 3px; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }

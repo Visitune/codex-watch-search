@@ -55,8 +55,8 @@ export async function sqliteQuery(sql: string, params: unknown[] = []): Promise<
   if (!p) throw new Error("No codex.db");
   const mtime = fs.statSync(p).mtimeMs;
   // lazy init sql.js
+  // @ts-ignore
   const initSqlJs = (await import("sql.js")).default;
-  // @ts-expect-error locateFile
   const SQL = await initSqlJs({ locateFile: (file: string) => path.join(process.cwd(), "node_modules", "sql.js", "dist", file) });
   const buf = fs.readFileSync(p);
   const db = new SQL.Database(buf);

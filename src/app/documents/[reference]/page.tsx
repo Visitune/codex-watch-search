@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Header } from "@/components/header";
+import { Icons } from "@/components/icons";
 
 type RawDoc = {
   Reference: string;
@@ -22,7 +24,6 @@ function loadOne(ref: string): RawDoc | null {
   const standards: RawDoc[] = raw.standards ?? raw.Standards ?? [];
   return standards.find((s) => s.Reference === ref) ?? null;
 }
-
 function pdfUrl(doc: RawDoc, lang: string): string | null {
   const f = doc.Description?.[lang];
   if (!f) return null;
@@ -35,45 +36,48 @@ export default function DocPage({ params }: { params: { reference: string } }) {
   if (!doc) notFound();
   const langs = ["en", "fr", "es", "zh", "ru", "ar"] as const;
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
-      <header className="border-b bg-white dark:bg-zinc-900">
-        <div className="max-w-3xl mx-auto px-6 py-4">
-          <Link href="/" className="text-sm text-zinc-500 hover:underline">← Retour catalogue</Link>
-          <h1 className="mt-2 text-xl font-semibold">{doc.Reference}</h1>
-          <p className="text-sm text-zinc-600">{doc.Title}</p>
-          <div className="mt-2 flex gap-2 text-xs">
-            <span className="px-2 py-0.5 rounded-full border">{doc.Committee}</span>
-            <span className="px-2 py-0.5 rounded-full border">Adopté {doc.AdoptedYear ?? "—"} • Modifié {doc.LastModified ?? "—"}</span>
-            <span className="px-2 py-0.5 rounded-full border">Type {doc.Type ?? "—"}</span>
+    <div className="min-h-screen bg-[#F8F9FC] dark:bg-[#0B1120]">
+      <Header />
+      <div className="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <Link href="/" className="inline-flex items-center gap-1.5 text-sm font-mono text-[#6B7280] dark:text-white/60 hover:text-[#F97316]"><Icons.arrowRight className="h-4 w-4 rotate-180" /> Retour catalogue</Link>
+        <div className="mt-4 rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-6">
+          <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 rounded-full bg-[#0B1120] dark:bg-white text-white dark:text-[#0B1120] text-xs font-mono font-bold">{doc.Reference}</span>
+            <span className="px-3 py-1 rounded-full bg-[#F8F9FC] dark:bg-white/[0.06] border text-xs font-mono">{doc.Committee} • Adopté {doc.AdoptedYear ?? "—"} • Modifié {doc.LastModified ?? "—"}</span>
           </div>
+          <h1 className="mt-3 text-[22px] md:text-[26px] font-extrabold leading-tight text-[#0B1120] dark:text-white">{doc.Title}</h1>
+          <p className="mt-2 text-sm text-[#6B7280] dark:text-white/60">Source officielle FAO/Codex • ID SharePoint {doc.SharePointId} • URLs signées <code className="px-1 py-0.5 rounded bg-[#F8F9FC] dark:bg-white/[0.06] border">/restapi/searchstandard/</code></p>
         </div>
-      </header>
-      <main className="max-w-3xl mx-auto px-6 py-6">
-        <div className="bg-white dark:bg-zinc-900 rounded-xl border p-4">
-          <h2 className="text-sm font-semibold mb-3">PDF officiels (source Codex)</h2>
-          <div className="grid grid-cols-2 gap-2">
+
+        <div className="mt-4 rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-6">
+          <h2 className="font-bold text-[#0B1120] dark:text-white flex items-center gap-2"><Icons.file className="h-4 w-4 text-[#F97316]" /> PDFs officiels</h2>
+          <div className="mt-4 grid sm:grid-cols-2 gap-3">
             {langs.map((lang) => {
               const url = pdfUrl(doc, lang);
               const has = !!doc.Description?.[lang];
               return (
-                <div key={lang} className="border rounded-lg p-3 flex justify-between items-center">
-                  <span className="text-sm font-medium uppercase">{lang}</span>
-                  {has && url ? (
-                    <a href={url} target="_blank" rel="noopener noreferrer" className="text-xs px-3 py-1 rounded-full bg-zinc-900 text-white hover:bg-black">Ouvrir PDF</a>
-                  ) : (
-                    <span className="text-xs text-zinc-400">Non disponible</span>
-                  )}
+                <div key={lang} className="rounded-xl border border-[#E5E7EB] dark:border-white/[0.06] bg-[#F8F9FC] dark:bg-[#0B1120] p-4 flex items-center justify-between">
+                  <div>
+                    <div className="text-sm font-mono font-bold uppercase">{lang} <span className="font-sans font-normal text-xs text-[#6B7280] dark:text-white/50">{doc.Description?.[lang] || "indisponible"}</span></div>
+                    <div className="text-xs font-mono text-[#9CA3AF]">lang={lang} & id={doc.SharePointId}</div>
+                  </div>
+                  {has && url ? <a href={url} target="_blank" rel="noopener noreferrer" className="h-8 inline-flex items-center gap-1.5 px-3 rounded-full bg-[#F97316] text-white text-xs font-bold hover:bg-[#EA6A0A]">Ouvrir <Icons.external className="h-3.5 w-3.5" /></a> : <span className="text-xs px-2.5 py-1 rounded-full bg-white dark:bg-white/[0.06] border text-[#9CA3AF]">Non dispo</span>}
                 </div>
               );
             })}
           </div>
-          <p className="mt-3 text-xs text-zinc-500">URLs: <code>/restapi/searchstandard/{"{file}"}?lang={"{lang}"}&id={doc.SharePointId}</code> — source officielle FAO/Codex. Hash & historique à venir (PRD §10.2).</p>
+          <div className="mt-4 flex gap-2">
+            <a href={pdfUrl(doc, "en") ?? "#"} target="_blank" className={`h-9 px-4 rounded-full text-xs font-bold inline-flex items-center gap-1.5 ${pdfUrl(doc, "en") ? "bg-[#0B1120] dark:bg-white text-white dark:text-[#0B1120]" : "bg-[#F8F9FC] border text-[#9CA3AF] pointer-events-none"}`}>Extraire EN <Icons.search className="h-4 w-4" /></a>
+            <a href={pdfUrl(doc, "fr") ?? "#"} target="_blank" className="h-9 px-4 rounded-full bg-white dark:bg-white/[0.06] border text-xs font-bold inline-flex items-center gap-1.5">API /extract <Icons.file className="h-4 w-4" /></a>
+          </div>
+          <p className="mt-3 text-xs font-mono text-[#9CA3AF]">Test extraction: <code>/api/documents/{encodeURIComponent(doc.Reference)}/extract?lang=en</code> → SHA-256 + preview 2000c (pdf-parse)</p>
         </div>
-        <div className="mt-6 bg-white dark:bg-zinc-900 rounded-xl border p-4">
-          <h2 className="text-sm font-semibold">Détails bruts</h2>
-          <pre className="mt-2 text-xs bg-zinc-50 dark:bg-zinc-950 p-3 rounded-lg overflow-auto">{JSON.stringify(doc, null, 2)}</pre>
+
+        <div className="mt-4 rounded-2xl bg-[#0B1120] dark:bg-[#131B2C] border border-white/10 p-5 text-white">
+          <h3 className="font-mono text-xs tracking-widest text-white/60">JSON BRUT (catalogue)</h3>
+          <pre className="mt-2 text-xs leading-relaxed overflow-auto max-h-[420px] p-3 rounded-xl bg-white/[0.06] border border-white/10">{JSON.stringify(doc, null, 2)}</pre>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
