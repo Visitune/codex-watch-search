@@ -1,0 +1,2527 @@
+{
+  "generatedAt": "2026-09-03T09:06:44.674Z",
+  "snapshotAt": "2026-09-03T08:05:43.966884+00:00",
+  "total": 401,
+  "byType": {
+    "1": 91,
+    "2": 4,
+    "3": 1,
+    "4": 58,
+    "5": 246,
+    "null": 1
+  },
+  "added": [
+    {
+      "Reference": "CXS 98-1981",
+      "Title": "Standard for Cooked Cured Chopped Meat",
+      "Committee": "CCPMPP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 97-1981",
+      "Title": "Standard for Cooked Cured Pork Shoulder",
+      "Committee": "CCPMPP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 96-1981",
+      "Title": "Standard for Cooked Cured Ham",
+      "Committee": "CCPMPP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 95-1981",
+      "Title": "Standard for Quick Frozen Lobsters",
+      "Committee": "CCFFP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 94-1981",
+      "Title": "Standard for Canned Sardines and Sardine-Type Products",
+      "Committee": "CCFFP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 92-1981",
+      "Title": "Standard for Quick Frozen Shrimps or Prawns",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 90-1981",
+      "Title": "Standard for Canned Crab Meat",
+      "Committee": "CCFFP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 89-1981",
+      "Title": "Standard for Luncheon Meat",
+      "Committee": "CCPMPP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 88-1981",
+      "Title": "Standard for Corned Beef",
+      "Committee": "CCPMPP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 87-1981",
+      "Title": "Standard for Chocolate and Chocolate Products",
+      "Committee": "CCCPC",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 86-1981",
+      "Title": "Standard for Cocoa Butter",
+      "Committee": "CCCPC",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 76-1981",
+      "Title": "Standard for Quick Frozen Bilberries",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 75-1981",
+      "Title": "Standard for Quick Frozen Peaches",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 74-1981",
+      "Title": "Standard for Processed Cereal-Based Foods for Infants and Young Children",
+      "Committee": "CCNFSDU",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 73-1981",
+      "Title": "Standard for Canned Baby Foods",
+      "Committee": "CCNFSDU",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 72-1981",
+      "Title": "Standard for Infant Formula and Formulas for Special Medical Purposes Intended for Infants",
+      "Committee": "CCNFSDU",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 70-1981",
+      "Title": "Standard for Canned Tuna and Bonito",
+      "Committee": "CCFFP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 69-1981",
+      "Title": "Standard for Quick Frozen Raspberries",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 66-1981",
+      "Title": "Standard for Table Olives",
+      "Committee": "CCPFV",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 62-1981",
+      "Title": "Standard for Canned Strawberries",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 60-1981",
+      "Title": "Standard for Canned Raspberries",
+      "Committee": "CCPFV",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 57-1981",
+      "Title": "Standard for Processed Tomato Concentrates",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 53-1981",
+      "Title": "Standard for Special Dietary Foods with Low-Sodium Content (Including Salt Substitutes)",
+      "Committee": "CCNFSDU",
+      "LastModified": 2019
+    },
+    {
+      "Reference": "CXS 52-1981",
+      "Title": "Standard for Quick Frozen Strawberries",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 40R-1981",
+      "Title": "Regional Standard for Chanterelles (Europe)",
+      "Committee": "CCEURO",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 39-1981",
+      "Title": "Standard for Dried Edible Fungi",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 38-1981",
+      "Title": "Standard for Edible Fungi and Fungus Products",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 37-1991",
+      "Title": "Standard for Canned Shrimps or Prawns",
+      "Committee": "CCFFP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 370-2026",
+      "Title": "Standard for baker’s yeast",
+      "Committee": "CCFA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 369-2026",
+      "Title": "Standard for spices in the form of dried seeds – requirements for coriander",
+      "Committee": "CCSCH",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 368-2026",
+      "Title": "Standard for spices in the form of dried fruits and berries – requirements for large cardamom",
+      "Committee": "CCSCH",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 367-2026",
+      "Title": "Standard for spices derived from dried or dehydrated fruits and berries – requirements for vanilla",
+      "Committee": "CCSCH",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 366-2026",
+      "Title": "Standard for fresh curry leaves",
+      "Committee": "CCFFV",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 365R-2026",
+      "Title": "Regional standard for maamoul (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 364R-2026",
+      "Title": "Regional standard for quick-frozen dumplings (Asia)",
+      "Committee": "CCASIA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 363-2025",
+      "Title": "Standard for fresh dates",
+      "Committee": "CCFFV",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 362R-2025",
+      "Title": "Regional standard for Castilla lulo (naranjilla) – Latin America and the Caribbean",
+      "Committee": "CCLAC",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 36-1981",
+      "Title": "Standard for Quick Frozen Finfish, Uneviscerated and Eviscerated ",
+      "Committee": "CCFFP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 361-2020",
+      "Title": "General standard for canned mixed fruits",
+      "Committee": "CCPFV",
+      "LastModified": 2020
+    },
+    {
+      "Reference": "CXS 360-2020",
+      "Title": "General standard for dried fruits",
+      "Committee": "CCPFV",
+      "LastModified": 2020
+    },
+    {
+      "Reference": "CXS 359-2024",
+      "Title": "Standard for dried or dehydrated roots, rhizomes and bulbs – Turmeric",
+      "Committee": "CCSCH",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 358-2024",
+      "Title": "Standard for spices derived from dried or dehydrated fruits and berries - Allspice, juniper berry and star anise\n",
+      "Committee": "CCSCH",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 357-2024",
+      "Title": "Standard for spices derived from dried or dehydrated fruits and berries – Small cardamom",
+      "Committee": "CCSCH",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 356R-2023",
+      "Title": "Regional Standard for Fermented Noni Fruit Juice (North America and South West Pacific)",
+      "Committee": "CCNASWP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 355R-2023",
+      "Title": "Regional Standard for Cooked Rice Wrapped in Plant Leaves (Asia)",
+      "Committee": "CCASIA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 354R-2023",
+      "Title": "Regional Standard for Soybean Products Fermented with Bacillus Species (Asia)",
+      "Committee": "CCASIA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 353-2022",
+      "Title": "Standard for Dried or Dehydrated Chilli Pepper and Paprika",
+      "Committee": "CCSCH",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 352-2022",
+      "Title": "Standard for Dried Seeds – Nutmeg",
+      "Committee": "CCSCH",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 351-2022",
+      "Title": "Standard for dried floral parts –saffron",
+      "Committee": "CCSCH",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 350R-2022",
+      "Title": "Regional Standard for Dried Meat (Africa)",
+      "Committee": "CCAFRICA",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 349-2022",
+      "Title": "Standard for Berry Fruits",
+      "Committee": "CCFFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 348-2022",
+      "Title": "Standard for Onions and Shallots",
+      "Committee": "CCFFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 347-2019",
+      "Title": "Standard for dried or dehydrated garlic",
+      "Committee": "CCSCH",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 346-2021",
+      "Title": "General Standard for the labelling of non-retail containers of foods",
+      "Committee": "CCFL",
+      "LastModified": 2021
+    },
+    {
+      "Reference": "CXS 345-2021",
+      "Title": "Standard for Dried Basil",
+      "Committee": "CCSCH",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 344-2021",
+      "Title": "Standard for dried floral parts: Cloves ",
+      "Committee": "CCSCH",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 343-2021",
+      "Title": "Standard for dried roots, rhizomes and bulbs: Dried or dehydrated ginger\n",
+      "Committee": "CCSCH",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 342-2021",
+      "Title": "Standard for Dried Oregano ",
+      "Committee": "CCSCH",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 341R-2020",
+      "Title": "Regional Standard for mixed zaatar (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 340-2020",
+      "Title": "Standard for yam",
+      "Committee": "CCFFV",
+      "LastModified": 2020
+    },
+    {
+      "Reference": "CXS 339-2020",
+      "Title": "Standard for ware potatoes",
+      "Committee": "CCFFV",
+      "LastModified": 2020
+    },
+    {
+      "Reference": "CXS 338-2020",
+      "Title": "Standard for kiwifruit",
+      "Committee": "CCFFV",
+      "LastModified": 2020
+    },
+    {
+      "Reference": "CXS 337-2020",
+      "Title": "Standard for fresh garlic",
+      "Committee": "CCFFV",
+      "LastModified": 2020
+    },
+    {
+      "Reference": "CXS 336R-2020",
+      "Title": "Regional Standard for kava products for use as a beverage when mixed with water (North America and South West Pacific)\n",
+      "Committee": "CCNASWP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 335R-2020",
+      "Title": "Regional Standard for fresh leaves of Gnetum spp. (Africa)",
+      "Committee": "CCAFRICA",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 334R-2020",
+      "Title": "Regional Standard for fermented cooked Cassava-based products (Africa)",
+      "Committee": "CCAFRICA",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 333-2019",
+      "Title": "Standard for Quinoa",
+      "Committee": "CCCPL",
+      "LastModified": 2020
+    },
+    {
+      "Reference": "CXS 332R-2018",
+      "Title": "Regional Standard for Doogh (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 33-1981",
+      "Title": "Standard for Olive Oils and Olive Pomace Oils",
+      "Committee": "CCFO",
+      "LastModified": 2021
+    },
+    {
+      "Reference": "CXS 331-2017",
+      "Title": "Standard for Dairy Permeate Powders",
+      "Committee": "CCMMP",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 330-2018",
+      "Title": "Standard for Aubergines",
+      "Committee": "CCFFV",
+      "LastModified": 2018
+    },
+    {
+      "Reference": "CXS 329-2017",
+      "Title": "Standard for Fish Oils",
+      "Committee": "CCFO",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 328-2017",
+      "Title": "Standard for Dried Thyme",
+      "Committee": "CCSCH",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 327-2017",
+      "Title": "Standard for Cumin",
+      "Committee": "CCSCH",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 326-2017",
+      "Title": "Standard for Black, White and Green Peppers",
+      "Committee": "CCSCH",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 325R-2017",
+      "Title": "Regional Standard for Unrefined Shea Butter (Africa)",
+      "Committee": "CCAFRICA",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 324R-2017",
+      "Title": "Regional Standard for Yacon (Latin America and the Caribbean)",
+      "Committee": "CCLAC",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 323R-2017",
+      "Title": "Regional Standard for Laver Products (Asia)",
+      "Committee": "CCASIA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 322R-2015",
+      "Title": "Regional Standard for Non-Fermented Soybean Products (Asia)",
+      "Committee": "CCASIA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 321-2015",
+      "Title": "Standard for Ginseng Products",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 320-2015",
+      "Title": "Standard for Quick Frozen Vegetables",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 3-1981",
+      "Title": "Standard for Canned Salmon",
+      "Committee": "CCFFP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 319-2015",
+      "Title": "Standard for Certain Canned Fruits",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 318-2014",
+      "Title": "Standard for Okra",
+      "Committee": "CCFFV",
+      "LastModified": 2014
+    },
+    {
+      "Reference": "CXS 317-2014",
+      "Title": "Standard for Durian",
+      "Committee": "CCFFV",
+      "LastModified": 2014
+    },
+    {
+      "Reference": "CXS 316-2014",
+      "Title": "Standard for Passion Fruit",
+      "Committee": "CCFFV",
+      "LastModified": 2014
+    },
+    {
+      "Reference": "CXS 315-2014",
+      "Title": "Standard for Fresh and Quick Frozen Raw Scallop Products",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 314R-2013",
+      "Title": "Regional Standard for Date Paste (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 313R-2013",
+      "Title": "Regional Standard for Tempe (Asia)",
+      "Committee": "CCASIA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 312-2013",
+      "Title": "Standard for Live Abalone and for Raw Fresh Chilled or Frozen Abalone for Direct Consumption or for further Processing",
+      "Committee": "CCFFP",
+      "LastModified": 2016
+    },
+    {
+      "Reference": "CXS 311-2013",
+      "Title": "Standard for Smoked Fish, Smoke-Flavoured Fish and Smoke-Dried Fish",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 310-2013",
+      "Title": "Standard for Pomegranate",
+      "Committee": "CCFFV",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXS 309R-2011",
+      "Title": "Regional Standard for Halwa Tehenia (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 308R-2011",
+      "Title": "Regional Standard for Harissa (Red Hot Pepper Paste) (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 307-2011",
+      "Title": "Standard for Chilli Peppers",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 306-2023",
+      "Title": "Standard for Chilli Sauce",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 305R-2011",
+      "Title": "Regional Standard for Lucuma (Latin America and the Caribbean)",
+      "Committee": "CCLAC",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 304R-2011",
+      "Title": "Regional Standard for Culantro Coyote (Latin America and the Caribbean)",
+      "Committee": "CCLAC",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 303-2011",
+      "Title": "Standard for Tree Tomatoes",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 302-2011",
+      "Title": "Standard for Fish Sauce",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 301R-2011",
+      "Title": "Regional Standard for Edible Sago Flour (Asia)",
+      "Committee": "CCASIA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 300-2010",
+      "Title": "Standard for Bitter Cassava",
+      "Committee": "CCFFV",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXS 299-2010",
+      "Title": "Standard for Apples",
+      "Committee": "CCFFV",
+      "LastModified": 2010
+    },
+    {
+      "Reference": "CXS 298R-2009",
+      "Title": "Regional Standard for Fermented Soybean Paste (Asia)",
+      "Committee": "CCASIA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 297-2009",
+      "Title": "Standard for Certain Canned Vegetables",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 296-2009",
+      "Title": "Standard for Jams, Jellies and Marmalades",
+      "Committee": "CCPFV",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 294-2023",
+      "Title": "Standard for Gochujang ",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 293-2008",
+      "Title": "Standard for Tomatoes",
+      "Committee": "CCFFV",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXS 292-2008",
+      "Title": "Standard for Live and Raw Bivalve Molluscs",
+      "Committee": "CCFFP",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 291-2010",
+      "Title": "Standard for Sturgeon Caviar",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 290-1995",
+      "Title": "Standard for Edible Casein Products",
+      "Committee": "CCMMP",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 289-1995",
+      "Title": "Standard for Whey Powders",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 288-1976",
+      "Title": "Standard for Cream and Prepared Creams",
+      "Committee": "CCMMP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 284-1971",
+      "Title": "Standard for Whey Cheeses",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 283-1978",
+      "Title": "General Standard for Cheese",
+      "Committee": "CCMMP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 282-1971",
+      "Title": "Standard for Sweetened Condensed Milks",
+      "Committee": "CCMMP",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 281-1971",
+      "Title": "Standard for Evaporated Milks",
+      "Committee": "CCMMP",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 280-1973",
+      "Title": "Standard for Milkfat Products",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 279-1971",
+      "Title": "Standard for Butter",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 278-1978",
+      "Title": "Standard for Extra Hard Grating Cheese",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 277-1973",
+      "Title": "Standard for Brie",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 276-1973",
+      "Title": "Standard for Camembert",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 275-1973",
+      "Title": "Standard for Cream Cheese",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 274-1969",
+      "Title": "Standard for Coulommiers",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 273-1968",
+      "Title": "Standard for Cottage Cheese",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 272-1968",
+      "Title": "Standard for Provolone",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 271-1968",
+      "Title": "Standard for Saint-Paulin",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 270-1968",
+      "Title": "Standard for Tilsiter",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 269-1967",
+      "Title": "Standard for Emmental",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 268-1966",
+      "Title": "Standard for Samsø",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 267-1966",
+      "Title": "Standard for Havarti",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 266-1966",
+      "Title": "Standard for Gouda",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 265-1966",
+      "Title": "Standard for Edam",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 264-1966",
+      "Title": "Standard for Danbo",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 263-1966",
+      "Title": "Standard for Cheddar",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 262-2006",
+      "Title": "Standard for Mozzarella",
+      "Committee": "CCMMP",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 260-2007",
+      "Title": "Standard for Pickled Fruits and Vegetables",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 259R-2007",
+      "Title": "Regional Standard for Tehena (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 258R-2007",
+      "Title": "Regional Standard for Canned Foul Medames (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 257R-2007",
+      "Title": "Regional Standard for Canned Humus with Tehena (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 256-1999",
+      "Title": "Standard for Fat Spreads and Blended Spreads",
+      "Committee": "CCFO",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 255-2007",
+      "Title": "Standard for Table Grapes",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 254-2007",
+      "Title": "Standard for Certain Canned Citrus Fruits",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 253-2006",
+      "Title": "Standard for Dairy Fat Spreads",
+      "Committee": "CCMMP",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 252-2006",
+      "Title": "Standard for a Blend of Sweetened Condensed Skimmed Milk and Vegetable Fat",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 251-2006",
+      "Title": "Standard for a Blend of Skimmed Milk and Vegetable Fat in Powdered Form",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 250-2006",
+      "Title": "Standard for a Blend of Evaporated Skimmed Milk and Vegetable Fat",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 249-2006",
+      "Title": "Standard for Instant Noodles",
+      "Committee": "CCCPL",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 247-2005",
+      "Title": "General Standard for Fruit Juices and Nectars",
+      "Committee": "CCPFV",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 246-2005",
+      "Title": "Standard for Rambutan",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 245-2004",
+      "Title": "Standard for Oranges",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 244-2004",
+      "Title": "Standard for Salted Atlantic Herring and Salted Sprat",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 243-2003",
+      "Title": "Standard for Fermented Milks",
+      "Committee": "CCMMP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 242-2003",
+      "Title": "Standard for Canned Stone Fruits",
+      "Committee": "CCPFV",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 241-2003",
+      "Title": "Standard for Canned Bamboo Shoots",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 240-2003",
+      "Title": "Standard for Aqueous Coconut Products - Coconut Milk and Coconut Cream",
+      "Committee": "CCPFV",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 239-2003",
+      "Title": "General Methods of Analysis for Food Additives",
+      "Committee": "CCMAS",
+      "LastModified": 2003
+    },
+    {
+      "Reference": "CXS 238-2003",
+      "Title": "Standard for Sweet Cassava",
+      "Committee": "CCFFV",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXS 237-2003",
+      "Title": "Standard for Pitahayas",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 236-2003",
+      "Title": "Standard for Boiled Dried Salted Anchovies",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 234-1999",
+      "Title": "Recommended Methods of Analysis and Sampling",
+      "Committee": "CCMAS",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 227-2001",
+      "Title": "General Standard for Bottled/Packaged Drinking Waters (Other Than Natural Mineral Waters)",
+      "Committee": "CCNMW",
+      "LastModified": 2019
+    },
+    {
+      "Reference": "CXS 226-2001",
+      "Title": "Standard for Cape Gooseberry",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 225-2001",
+      "Title": "Standard for Asparagus",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 224-2001",
+      "Title": "Standard for Tannia",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 223-2001",
+      "Title": "Standard for Kimchi",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 222-2001",
+      "Title": "Standard for Crackers from Marine and Freshwater Fish, Crustaceans and Molluscan Shellfish",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 221-2001",
+      "Title": "Group Standard for Unripened Cheese including Fresh Cheese",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 220-1999",
+      "Title": "Standard for Longans",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 219-1999",
+      "Title": "Standard for Grapefruits ",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 218-1999",
+      "Title": "Standard for Ginger",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 217-1999",
+      "Title": "Standard for Mexican Limes",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 216-1999",
+      "Title": "Standard for Chayotes",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 215-1999",
+      "Title": "Standard for Guavas",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 214-1999",
+      "Title": "Standard for Pummelos ",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 213-1999",
+      "Title": "Standard for Limes",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 212-1999",
+      "Title": "Standard for Sugars",
+      "Committee": "CCS",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 211-1999",
+      "Title": "Standard for Named Animal Fats",
+      "Committee": "CCFO",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 210-1999",
+      "Title": "Standard for Named Vegetable Oils",
+      "Committee": "CCFO",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 208-1999",
+      "Title": "Group Standard for Cheeses in Brine",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 207-1999",
+      "Title": "Standard for Milk Powders and Cream Powder",
+      "Committee": "CCMMP",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 206-1999",
+      "Title": "General Standard for the Use of Dairy Terms",
+      "Committee": "CCMMP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 205-1997",
+      "Title": "Standard for Bananas",
+      "Committee": "CCFFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 204-1997",
+      "Title": "Standard for Mangosteens",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 203-1995",
+      "Title": "Standard for Formula Foods for Use in Very Low Energy Diets for Weight Reduction",
+      "Committee": "CCNFSDU",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 202-1995",
+      "Title": "Standard for Couscous",
+      "Committee": "CCCPL",
+      "LastModified": 1995
+    },
+    {
+      "Reference": "CXS 201-1995",
+      "Title": "Standard for Oats",
+      "Committee": "CCCPL",
+      "LastModified": 2019
+    },
+    {
+      "Reference": "CXS 200-1995",
+      "Title": "Standard for Peanuts",
+      "Committee": "CCCPL",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 199-1995",
+      "Title": "Standard for Wheat and Durum Wheat",
+      "Committee": "CCCPL",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 198-1995",
+      "Title": "Standard for Rice",
+      "Committee": "CCCPL",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 197-1995",
+      "Title": "Standard for Avocado",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 196-1995",
+      "Title": "Standard for Litchi",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 193-1995",
+      "Title": "General Standard for Contaminants and Toxins in Food and Feed",
+      "Committee": "CCCF",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 192-1995",
+      "Title": "General Standard for Food Additives",
+      "Committee": "CCFA",
+      "LastModified": 1995
+    },
+    {
+      "Reference": "CXS 19-1981",
+      "Title": "Standard for Edible Fats and Oils not Covered by Individual Standards",
+      "Committee": "CCFO",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 191-1995",
+      "Title": "Standard for Quick Frozen Raw Squid",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 190-1995",
+      "Title": "Standard for Quick Frozen Fish Fillets",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 189-1993",
+      "Title": "Standard for Dried Shark Fins",
+      "Committee": "CCFFP",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 188-1993",
+      "Title": "Standard for Baby Corn",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 187-1993",
+      "Title": "Standard for Carambola",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 186-1993",
+      "Title": "Standard for Prickly Pear",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 185-1993",
+      "Title": "Standard for Nopal",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 184-1993",
+      "Title": "Standard for Mangoes",
+      "Committee": "CCFFV",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXS 183-1993",
+      "Title": "Standard for Papaya",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 182-1993",
+      "Title": "Standard for Pineapples",
+      "Committee": "CCFFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXS 181-1991",
+      "Title": "Standard for Formula Foods for Use in Weight Control Diets",
+      "Committee": "CCNFSDU",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 180-1991",
+      "Title": "Standard for Labelling of and Claims for Foods for Special Medical Purposes",
+      "Committee": "CCNFSDU",
+      "LastModified": 1991
+    },
+    {
+      "Reference": "CXS 178-1991",
+      "Title": "Standard for Durum Wheat Semolina and Durum Wheat Flour",
+      "Committee": "CCCPL",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 177-1991",
+      "Title": "Standard for Desiccated Coconut",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 176-1989",
+      "Title": "Standard for Edible Cassava Flour",
+      "Committee": "CCCPL",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 175-1989",
+      "Title": "Standard for Soy Protein Products",
+      "Committee": "CCVP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 174-1989",
+      "Title": "General Standard for Vegetable Protein Products (VPP)",
+      "Committee": "CCVP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 173-1989",
+      "Title": "Standard for Sorghum Flour",
+      "Committee": "CCCPL",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 172-1989",
+      "Title": "Standard for Sorghum Grains",
+      "Committee": "CCCPL",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 17-1981",
+      "Title": "Standard for Canned Applesauce",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 171-1989",
+      "Title": "Standard for Certain Pulses",
+      "Committee": "CCCPL",
+      "LastModified": 1989
+    },
+    {
+      "Reference": "CXS 170-1989",
+      "Title": "Standard for Pearl Millet Flour",
+      "Committee": "CCCPL",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 169-1989",
+      "Title": "Standard for Whole and Decorticated Pearl Millet Grains",
+      "Committee": "CCCPL",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 167-1989",
+      "Title": "Standard for Salted Fish and Dried Salted Fish of the Gadidae Family of Fishes",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 166-1989",
+      "Title": "Standard for Quick Frozen Fish Sticks (Fish Fingers), Fish Portions and Fish Fillets - Breaded or in Batter",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 165-1989",
+      "Title": "Standard for Quick Frozen Blocks of Fish Fillets, Minced Fish Flesh and Mixtures of Fillets and Minced Fish Flesh",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 163-1987",
+      "Title": "Standard for Wheat Protein Products Including Wheat Gluten",
+      "Committee": "CCVP",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 160-1987",
+      "Title": "Standard for Mango Chutney",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 156-1987",
+      "Title": "Standard for Follow-up formula for Older Infants and Product for Young Children",
+      "Committee": "CCNFSDU",
+      "LastModified": 2017
+    },
+    {
+      "Reference": "CXS 155-1985",
+      "Title": "Standard for Degermed Maize (Corn) Meal and Maize (Corn) Grits",
+      "Committee": "CCCPL",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 154-1985",
+      "Title": "Standard for Whole Maize (Corn) Meal",
+      "Committee": "CCCPL",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 153-1985",
+      "Title": "Standard for Maize (Corn)",
+      "Committee": "CCCPL",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 152-1985",
+      "Title": "Standard for Wheat Flour",
+      "Committee": "CCCPL",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 151-1985",
+      "Title": "Standard for Gari",
+      "Committee": "CCCPL",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 150-1985",
+      "Title": "Standard for Food Grade Salt",
+      "Committee": "CCFA",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 146-1985",
+      "Title": "General Standard for the Labelling of and Claims for Prepackaged Foods for Special Dietary Uses",
+      "Committee": "CCFL",
+      "LastModified": 2009
+    },
+    {
+      "Reference": "CXS 145-1985",
+      "Title": "Standard for Canned Chestnuts and Canned Chestnut Purée",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 141-1983",
+      "Title": "Standard for Cocoa (Cacao) Mass (Cocoa/Chocolate Liquor) and Cocoa Cake",
+      "Committee": "CCCPC",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 13-1981",
+      "Title": "Standard for Preserved Tomatoes",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 131-1981",
+      "Title": "Standard for Unshelled Pistachio Nuts",
+      "Committee": "CCPFV",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXS 12-1981",
+      "Title": "Standard for Honey",
+      "Committee": "CCS",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXS 1-1985",
+      "Title": "General Standard for the Labelling of Pre-packaged Foods",
+      "Committee": "CCFL",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXS 119-1981",
+      "Title": "Standard for Canned Finfish",
+      "Committee": "CCFFP",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXS 118-1979",
+      "Title": "Standard for Foods for Special Dietary Use for Persons Intolerant to Gluten",
+      "Committee": "CCNFSDU",
+      "LastModified": 2015
+    },
+    {
+      "Reference": "CXS 117-1981",
+      "Title": "Standard for Bouillons and Consommés",
+      "Committee": "CCSB",
+      "LastModified": 2021
+    },
+    {
+      "Reference": "CXS 115-1981",
+      "Title": "Standard for Pickled Cucumbers (Cucumber Pickles)",
+      "Committee": "CCPFV",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 108-1981",
+      "Title": "Standard for Natural Mineral Waters",
+      "Committee": "CCNMW",
+      "LastModified": 2019
+    },
+    {
+      "Reference": "CXS 107-1981",
+      "Title": "General Standard for the Labelling of Food Additives when sold as such",
+      "Committee": "CCFA",
+      "LastModified": 1981
+    },
+    {
+      "Reference": "CXS 106-1983",
+      "Title": "General Standard for Irradiated Foods",
+      "Committee": "CCFH",
+      "LastModified": 1983
+    },
+    {
+      "Reference": "CXS 105-1981",
+      "Title": "Standard for Cocoa powders (cocoas) and dry mixtures of cocoa and sugars",
+      "Committee": "CCCPC",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXS 103-1981",
+      "Title": "Standard for Quick Frozen Blueberries",
+      "Committee": "CCPFV",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXM 2",
+      "Title": "Maximum Residue Limits (MRLs) and Risk Management Recommendations (RMRs) for Residues of Veterinary Drugs in Foods",
+      "Committee": "CCRVDF",
+      "LastModified": null
+    },
+    {
+      "Reference": "CXG 99-2023",
+      "Title": "Guidelines for the Control of Shiga Toxin-Producing E. coli (STEC) in Raw Beef, Fresh Leafy Vegetables, Raw Milk and Raw Milk Cheeses, and Sprouts",
+      "Committee": "CCFH",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXG 98-2022",
+      "Title": "Guidelines for Developing Harmonized Food Safety Legislation \nfor the CCAFRICA Region",
+      "Committee": "CCAFRICA",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXG 97-2022",
+      "Title": "Guidelines for the Recognition of Active Substances or Authorized Uses of Active Substances of Low Public Health Concern that are Considered Exempted from the Establishment of Maximum Residue Limits or do not give rise to Residues",
+      "Committee": "CCPR",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXG 96-2022",
+      "Title": "Guidelines on the Management of Biological Foodborne Outbreaks",
+      "Committee": "CCFH",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXG 95-2022",
+      "Title": "Guidelines for ready-to-use therapeutic foods (RUTF)",
+      "Committee": "CCNFSDU",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXG 94-2021",
+      "Title": "Guidelines on integrated monitoring and surveillance of foodborne antimicrobial resistance\n",
+      "Committee": "TFAMR",
+      "LastModified": 2021
+    },
+    {
+      "Reference": "CXG 93-2021",
+      "Title": "Principles and Guidelines for the assessment and use of voluntary third-party assurance programmes",
+      "Committee": "CCFICS",
+      "LastModified": 2021
+    },
+    {
+      "Reference": "CXG 92-2019",
+      "Title": "Guidelines for Rapid Risk Analysis Following Instances of Detection of Contaminants in Food where there is No Regulatory Level",
+      "Committee": "CCCF",
+      "LastModified": 2019
+    },
+    {
+      "Reference": "CXG 9-1987",
+      "Title": "General Principles for the Addition of Essential Nutrients to Foods",
+      "Committee": "CCNFSDU",
+      "LastModified": 1991
+    },
+    {
+      "Reference": "CXG 91-2017",
+      "Title": "Principles and Guidelines for Monitoring the Performance of National Food Control Systems",
+      "Committee": "CCFICS",
+      "LastModified": 2017
+    },
+    {
+      "Reference": "CXG 90-2017",
+      "Title": "Guidelines on Performance Criteria for Methods of Analysis for the Determination of Pesticide Residues in Food and Feed",
+      "Committee": "CCPR",
+      "LastModified": 2017
+    },
+    {
+      "Reference": "CXG 89-2016",
+      "Title": "Principles and guidelines for the exchange of information between importing and exporting countries to support the trade in food",
+      "Committee": "CCFICS",
+      "LastModified": 2016
+    },
+    {
+      "Reference": "CXG 88-2016",
+      "Title": "Guidelines on the Application of General Principles of Food Hygiene to the Control of Foodborne Parasites",
+      "Committee": "CCFH",
+      "LastModified": 2016
+    },
+    {
+      "Reference": "CXG 87-2016",
+      "Title": "Guidelines for the Control of Nontyphoidal Salmonella spp. in Beef and Pork Meat",
+      "Committee": "CCFH",
+      "LastModified": 2016
+    },
+    {
+      "Reference": "CXG 86-2015",
+      "Title": "Guidelines for the Control of Trichinella Spp. in Meat of Suidae",
+      "Committee": "CCFH",
+      "LastModified": 2015
+    },
+    {
+      "Reference": "CXG 85-2014",
+      "Title": "Guidelines for the Control of Taenia Saginata in Meat of Domestic Cattle",
+      "Committee": "CCFH",
+      "LastModified": 2014
+    },
+    {
+      "Reference": "CXG 84-2012",
+      "Title": "Principles and Guidance on the Selection of Representative Commodities for the Extrapolation of Maximum Residue Limits for Pesticides to Commodity Groups",
+      "Committee": "CCPR",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXG 83-2013",
+      "Title": "Principles for the Use of Sampling and Testing in International Food Trade",
+      "Committee": "CCMAS",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXG 82-2013",
+      "Title": "Principles and Guidelines for National Food Control Systems ",
+      "Committee": "CCFICS",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXG 8-1991",
+      "Title": "Guidelines on Formulated Complementary Foods for Older Infants and Young Children",
+      "Committee": "CCNFSDU",
+      "LastModified": 2017
+    },
+    {
+      "Reference": "CXG 81-2013",
+      "Title": "Guidance for Governments on Prioritizing Hazards in Feed",
+      "Committee": "TFAF",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXG 80-2013",
+      "Title": "Guidelines on the Application of Risk Assessment for Feed",
+      "Committee": "TFAF",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXG 79-2012",
+      "Title": "Guidelines on the Application of General Principles of Food Hygiene to the Control of Viruses in Food",
+      "Committee": "CCFH",
+      "LastModified": 2012
+    },
+    {
+      "Reference": "CXG 78-2011",
+      "Title": "Guidelines for the Control of Campylobacter and Salmonella in Chicken Meat",
+      "Committee": "CCFH",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXG 77-2011",
+      "Title": "Guidelines for Risk Analysis of Foodborne Antimicrobial Resistance",
+      "Committee": "TFAMR",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXG 76-2011",
+      "Title": "Compilation of Codex texts relevant to the labelling of foods derived from modern biotechnology",
+      "Committee": "CCFL",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXG 75-2010",
+      "Title": "Guidelines on Substances used as Processing Aids",
+      "Committee": "CCFA",
+      "LastModified": 2010
+    },
+    {
+      "Reference": "CXG 74-2010",
+      "Title": "Guidelines on Performance Criteria and Validation of Methods for Detection, Identification and Quantification of Specific DNA Sequences and Specific Proteins in Foods",
+      "Committee": "CCMAS",
+      "LastModified": 2010
+    },
+    {
+      "Reference": "CXG 73-2010",
+      "Title": "Guidelines on the Application of General Principles of Food Hygiene to the Control of Pathogenic Vibrio Species in Seafood",
+      "Committee": "CCFH",
+      "LastModified": 2010
+    },
+    {
+      "Reference": "CXG 72-2009",
+      "Title": "Guidelines on Analytical Terminology\n",
+      "Committee": "CCMAS",
+      "LastModified": 2009
+    },
+    {
+      "Reference": "CXG 71-2009",
+      "Title": "Guidelines for the Design and Implementation of National Regulatory Food Safety Assurance Programmes Associated with the Use of Veterinary Drugs in Food Producing Animals",
+      "Committee": "CCRVDF",
+      "LastModified": 2009
+    },
+    {
+      "Reference": "CXG 70-2009",
+      "Title": "Guidelines for Settling Disputes on Analytical (Test) Results",
+      "Committee": "CCMAS",
+      "LastModified": 2009
+    },
+    {
+      "Reference": "CXG 69-2008",
+      "Title": "Guidelines for the Validation of Food Safety Control Measures",
+      "Committee": "CCFH",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXG 68-2008",
+      "Title": "Guideline for the Conduct of Food Safety Assessment of Foods Derived from Recombinant-DNA Animals",
+      "Committee": "TFFBT",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXG 67-2008",
+      "Title": "Model Export Certificate for Milk and Milk Products",
+      "Committee": "CCMMP",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXG 66-2008",
+      "Title": "Guidelines for the Use of Flavourings",
+      "Committee": "CCFA",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXG 65-1997",
+      "Title": "Harmonized Guidelines for Internal Quality Control in Analytical Chemistry Laboratories",
+      "Committee": "CCMAS",
+      "LastModified": 1997
+    },
+    {
+      "Reference": "CXG 64-1995",
+      "Title": "Protocol for the Design, Conduct and Interpretation of Method Performance Studies",
+      "Committee": "CCMAS",
+      "LastModified": 1995
+    },
+    {
+      "Reference": "CXG 63-2007",
+      "Title": "Principles and Guidelines for the Conduct of Microbiological Risk Management (MRM)",
+      "Committee": "CCFH",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXG 62-2007",
+      "Title": "Working Principles for Risk Analysis for Food Safety for Application by Governments",
+      "Committee": "CCGP",
+      "LastModified": 2007
+    },
+    {
+      "Reference": "CXG 61-2007",
+      "Title": "Guidelines on the Application of General Principles of Food Hygiene to the Control of Listeria Monocytogenes in Foods",
+      "Committee": "CCFH",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXG 60-2006",
+      "Title": "Principles for Traceability / Product Tracing as a Tool Within a Food Inspection and Certification System",
+      "Committee": "CCFICS",
+      "LastModified": 2006
+    },
+    {
+      "Reference": "CXG 59-2006",
+      "Title": "Guidelines on Estimation of Uncertainty of Results",
+      "Committee": "CCPR",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXG 58R-2005",
+      "Title": "Regional Guidelines for Codex Contact Points and National Codex Committees (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXG 57R-1999",
+      "Title": "Regional Guidelines for Codex Contact Points and National Codex Committees (Asia)",
+      "Committee": "CCASIA",
+      "LastModified": 1999
+    },
+    {
+      "Reference": "CXG 55-2005",
+      "Title": "Guidelines for Vitamin and Mineral Food Supplements",
+      "Committee": "CCNFSDU",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXG 54-2004",
+      "Title": "Guidelines on Measurement Uncertainty",
+      "Committee": "CCMAS",
+      "LastModified": 2004
+    },
+    {
+      "Reference": "CXG 53-2003",
+      "Title": "Guidelines on the Judgement of Equivalence of Sanitary Measures associated with Food Inspection and Certification Systems",
+      "Committee": "CCFICS",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXG 51-2003",
+      "Title": "Guidelines for Packing Media for Canned Fruits",
+      "Committee": "CCPFV",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXG 50-2004",
+      "Title": "General Guidelines on Sampling",
+      "Committee": "CCMAS",
+      "LastModified": 2004
+    },
+    {
+      "Reference": "CXG 49-2003",
+      "Title": "Harmonized IUPAC Guidelines for Single-Laboratory Validation of Methods of Analysis",
+      "Committee": "CCMAS",
+      "LastModified": 2003
+    },
+    {
+      "Reference": "CXG 48-2004",
+      "Title": "Model Certificate for Fish and Fishery Products ",
+      "Committee": "CCFFP",
+      "LastModified": 2004
+    },
+    {
+      "Reference": "CXG 47-2003",
+      "Title": "Guidelines for Food Import Control Systems",
+      "Committee": "CCFICS",
+      "LastModified": 2003
+    },
+    {
+      "Reference": "CXG 46-2003",
+      "Title": "Guideline for the Conduct of Food Safety Assessment of Foods Produced Using Recombiant-DNA Microorganisms ",
+      "Committee": "TFFBT",
+      "LastModified": 2003
+    },
+    {
+      "Reference": "CXG 45-2003",
+      "Title": "Guideline for the Conduct of Food Safety Assessment of Foods Derived from Recombinant-DNA Plants",
+      "Committee": "TFFBT",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXG 44-2003",
+      "Title": "Principles for the Risk Analysis of Foods Derived from Modern Biotechnology",
+      "Committee": "TFFBT",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXG 43R-2003",
+      "Title": "Regional Guidelines for Codex Contact Points and National Codex Committees (Africa)",
+      "Committee": "CCAFRICA",
+      "LastModified": 2003
+    },
+    {
+      "Reference": "CXG 4-1989",
+      "Title": "General Guidelines for the Utilization of Vegetable Protein Products (VPP) in Foods",
+      "Committee": "CCVP",
+      "LastModified": 1989
+    },
+    {
+      "Reference": "CXG 40-1993",
+      "Title": "Guidelines on Good Laboratory Practice in Pesticide Residue Analysis",
+      "Committee": "CCPR",
+      "LastModified": 2010
+    },
+    {
+      "Reference": "CXG 38-2001",
+      "Title": "Guidelines for Design, Production, Issuance and Use of Generic Official Certificates",
+      "Committee": "CCFICS",
+      "LastModified": 2001
+    },
+    {
+      "Reference": "CXG 37-2001",
+      "Title": "Harmonized IUPAC Guidelines for the Use of Recovery Information in Analytical Measurement ",
+      "Committee": "CCMAS",
+      "LastModified": 2001
+    },
+    {
+      "Reference": "CXG 36-1989",
+      "Title": "Class Names and the International Numbering System for Food Additives",
+      "Committee": "CCFA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXG 34-1999",
+      "Title": "Guidelines for the Development of Equivalence Agreements Regarding Food Imports and Export Inspection and Certification Systems",
+      "Committee": "CCFICS",
+      "LastModified": 1999
+    },
+    {
+      "Reference": "CXG 33-1999",
+      "Title": "Recommended Methods of Sampling for the Determination of Pesticide Residues for Compliance with MRLs",
+      "Committee": "CCPR",
+      "LastModified": 1999
+    },
+    {
+      "Reference": "CXG 32-1999",
+      "Title": "Guidelines for the Production, Processing, Labelling and Marketing of Organically Produced Foods",
+      "Committee": "CCFL",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXG 3-1989",
+      "Title": "Guidelines for Simple Evaluation of Dietary Exposure to Food Additives",
+      "Committee": "CCFA",
+      "LastModified": 1989
+    },
+    {
+      "Reference": "CXG 31-1999",
+      "Title": "Guidelines for the Sensory Evaluation of Fish and Shellfish in Laboratories",
+      "Committee": "CCFFP",
+      "LastModified": 1999
+    },
+    {
+      "Reference": "CXG 30-1999",
+      "Title": "Principles and Guidelines for the Conduct of Microbiological Risk Assessment",
+      "Committee": "CCFH",
+      "LastModified": 2014
+    },
+    {
+      "Reference": "CXG 28-1995",
+      "Title": "Food Control Laboratory Management: Recommendations",
+      "Committee": "CCMAS",
+      "LastModified": 1995
+    },
+    {
+      "Reference": "CXG 27-1997",
+      "Title": "Guidelines for the Assessment of the Competence of Testing Laboratories Involved in the Import and Export Control of Food",
+      "Committee": "CCMAS",
+      "LastModified": 2006
+    },
+    {
+      "Reference": "CXG 26-1997",
+      "Title": "Guidelines for the Design, Operation, Assessment and Accreditation of Food Import and Export Inspection and Certification Systems",
+      "Committee": "CCFICS",
+      "LastModified": 1997
+    },
+    {
+      "Reference": "CXG 25-1997",
+      "Title": "Guidelines for the Exchange of Information between Countries on Rejections of Imported Foods",
+      "Committee": "CCFICS",
+      "LastModified": 1997
+    },
+    {
+      "Reference": "CXG 24-1997",
+      "Title": "General Guidelines for Use of the Term \"Halal\"",
+      "Committee": "CCFL",
+      "LastModified": 1997
+    },
+    {
+      "Reference": "CXG 23-1997",
+      "Title": "Guidelines for Use of Nutrition and Health Claims",
+      "Committee": "CCFL",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXG 22R-1997",
+      "Title": "Regional Guidelines for the Design of Control Measures for Street-Vended Foods (Africa)",
+      "Committee": "CCAFRICA",
+      "LastModified": 1997
+    },
+    {
+      "Reference": "CXG 2-1985",
+      "Title": "Guidelines on Nutrition Labelling",
+      "Committee": "CCFL",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXG 21-1997",
+      "Title": "Principles and Guidelines for the Establishment and Application of Microbiological Criteria Related to Foods",
+      "Committee": "CCFH",
+      "LastModified": 1997
+    },
+    {
+      "Reference": "CXG 20-1995",
+      "Title": "Principles for Food Import and Export Inspection and Certification ",
+      "Committee": "CCFICS",
+      "LastModified": 1995
+    },
+    {
+      "Reference": "CXG 19-1995",
+      "Title": "Principles and Guidelines for the Exchange of Information in Food Safety Emergency Situations",
+      "Committee": "CCFICS",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXG 17-1993",
+      "Title": "Guidelines Procedures for the Visual Inspection of Lots of Canned Foods for Unacceptable Defects",
+      "Committee": "CCPFV",
+      "LastModified": 1993
+    },
+    {
+      "Reference": "CXG 14-1991",
+      "Title": "Guide for the Microbiological Quality of Spices and Herbs Used in Processed Meat and Poultry Products",
+      "Committee": "CCPMPP",
+      "LastModified": 1991
+    },
+    {
+      "Reference": "CXG 13-1991",
+      "Title": "Guidelines for the Preservation of Raw Milk by Use of the Lactoperoxidase System",
+      "Committee": "CCMMP",
+      "LastModified": 1991
+    },
+    {
+      "Reference": "CXG 1-1979",
+      "Title": "General Guidelines on Claims",
+      "Committee": "CCFL",
+      "LastModified": 2009
+    },
+    {
+      "Reference": "CXG 108-2026",
+      "Title": "Guidelines on the application of food labelling provisions in emergencies",
+      "Committee": "CCFL",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXG 106-2025",
+      "Title": "Guidelines for monitoring the stability and purity of reference materials and related stock solutions of pesticides during prolonged storage",
+      "Committee": "CCPR",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXG 105-2024",
+      "Title": "Guidelines on the use of technology to provide food information in food labelling",
+      "Committee": "CCFL",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXG 104-2024",
+      "Title": "Guidelines on the provision of food information for pre-packaged foods to be offered via e-commerce",
+      "Committee": "CCFL",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXG 103-2024",
+      "Title": "Guidelines for food hygiene control measures in traditional markets for food",
+      "Committee": "CCFH",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXG 102-2023",
+      "Title": "Principles and Guidelines on the Use of Remote Audit and Inspection in Regulatory Frameworks",
+      "Committee": "CCFICS",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXG 10-1979",
+      "Title": "Advisory Lists of Nutrient Compounds for Use in Foods for Special Dietary Uses intended for Infants and Young Children",
+      "Committee": "CCNFSDU",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXG 101-2023",
+      "Title": "Guidelines on Recognition and Maintenance of Equivalence of National Food Control Systems (NFCS)",
+      "Committee": "CCFICS",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXG 100-2023",
+      "Title": "Guidelines for the Safe Use and Reuse of Water in Food Production and Processing",
+      "Committee": "CCFH",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXC 83-2024",
+      "Title": "Code of practice for the prevention or reduction of ciguatera poisoning",
+      "Committee": "CCCF",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXC 82-2023",
+      "Title": "Code of Practice for the Prevention and Reduction of Mycotoxins Contamination in Cassava and Cassava-Based Products ",
+      "Committee": "CCCF",
+      "LastModified": 2023
+    },
+    {
+      "Reference": "CXC 8-1976",
+      "Title": "Code of Practice for the Processing and Handling of Quick Frozen Foods",
+      "Committee": "TFPHQFF",
+      "LastModified": 1976
+    },
+    {
+      "Reference": "CXC 81-2022",
+      "Title": "Code of Practice for the Prevention and Reduction of Cadmium Contamination in Cocoa Beans",
+      "Committee": "CCCF",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXC 80-2020",
+      "Title": "Code of Practice on Food Allergen Management for Food Business Operators\r\n",
+      "Committee": "CCFH",
+      "LastModified": 2020
+    },
+    {
+      "Reference": "CXC 79-2019",
+      "Title": "Code of Practice for the Reduction of 3-Monochloropropane-1,2- Diol Esters (3-MCPDEs) and Glycidyl Esters (GEs) in Refined Oils \nand Food Products Made With Refined Oils",
+      "Committee": "CCCF",
+      "LastModified": 2019
+    },
+    {
+      "Reference": "CXC 78-2017",
+      "Title": "Code of Practice for the Prevention and Reduction of Mycotoxins in Spices\n",
+      "Committee": "CCCF",
+      "LastModified": 2017
+    },
+    {
+      "Reference": "CXC 77-2017",
+      "Title": "Code of Practice for the Prevention and Reduction of Arsenic Contamination in Rice",
+      "Committee": "CCCF",
+      "LastModified": 2017
+    },
+    {
+      "Reference": "CXC 76R-2017",
+      "Title": "Regional Code of Hygienic Practice for Street-Vended Foods in Asia",
+      "Committee": "CCASIA",
+      "LastModified": 2017
+    },
+    {
+      "Reference": "CXC 75-2015",
+      "Title": "Code of Hygienic Practice for Low-Moisture Foods",
+      "Committee": "CCFH",
+      "LastModified": 2018
+    },
+    {
+      "Reference": "CXC 74-2014",
+      "Title": "Code of Practice for Weed Control to Prevent and Reduce Pyrrolizidine Alkaloid Contamination in Food and Feed",
+      "Committee": "CCCF",
+      "LastModified": 2014
+    },
+    {
+      "Reference": "CXC 73-2013",
+      "Title": "Code of Practice for the Reduction of Hydrocyanic Acid (HCN) in Cassava and Cassava Products",
+      "Committee": "CCCF",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXC 72-2013",
+      "Title": "Code of Practice for the Prevention and Reduction of Ochratoxin A Contamination in Cocoa",
+      "Committee": "CCCF",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXC 71R-2013",
+      "Title": "Regional Code of Practice for Street-vended Foods (Near East)",
+      "Committee": "CCNE",
+      "LastModified": 2013
+    },
+    {
+      "Reference": "CXC 70-2011",
+      "Title": "Code of Practice for the Prevention and Reduction of Ethyl Carbamate Contamination in Stone Fruit Distillates",
+      "Committee": "CCCF",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXC 69-2009",
+      "Title": "Code of Practice for the Prevention and Reduction of Ochratoxin A Contamination in Coffee",
+      "Committee": "CCCF",
+      "LastModified": 2009
+    },
+    {
+      "Reference": "CXC 68-2009",
+      "Title": "Code of Practice for the Reduction of Contamination of Food with Polycyclic Aromatic Hydrocarbons (PAH) from Smoking and Direct Drying Processes",
+      "Committee": "CCCF",
+      "LastModified": 2009
+    },
+    {
+      "Reference": "CXC 67-2009",
+      "Title": "Code of Practice for the Reduction of Acrylamide in Foods",
+      "Committee": "CCCF",
+      "LastModified": 2009
+    },
+    {
+      "Reference": "CXC 66-2008",
+      "Title": "Code of Hygienic Practice for Powdered Formulae for Infants and Young Children",
+      "Committee": "CCFH",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXC 65-2008",
+      "Title": "Code of Practice for the Prevention and Reduction of Aflatoxin Contamination in Dried Figs",
+      "Committee": "CCCF",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXC 64-2008",
+      "Title": "Code of Practice for the Reduction of 3-Monochloropropane-1,2-diol (3-MCPD) during the Production of Acid-HVPs and Products that Contain Acid- HVPs",
+      "Committee": "CCCF",
+      "LastModified": 2008
+    },
+    {
+      "Reference": "CXC 63-2007",
+      "Title": "Code of Practice for the Prevention and Reduction of Ochratoxin A Contamination in Wine",
+      "Committee": "CCCF",
+      "LastModified": 2007
+    },
+    {
+      "Reference": "CXC 62-2006",
+      "Title": "Code of Practice for the Prevention and Reduction of Dioxin, Dioxins-like PCBs and non-Dioxin-like PCBs in Food and Feed",
+      "Committee": "CCCF",
+      "LastModified": 2006
+    },
+    {
+      "Reference": "CXC 6-1972",
+      "Title": "Code of Hygienic Practice for Tree Nuts",
+      "Committee": "CCPFV",
+      "LastModified": 1972
+    },
+    {
+      "Reference": "CXC 61-2005",
+      "Title": "Code of Practice to Minimize and Contain Foodborne Antimicrobial Resistance",
+      "Committee": "TFAMR",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXC 60-2005",
+      "Title": "Code of Practice for the Prevention and Reduction of Inorganic Tin Contamination in Canned Foods",
+      "Committee": "CCCF",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXC 59-2005",
+      "Title": "Code of Practice for the Prevention and Reduction of Aflatoxin Contamination in Tree Nuts",
+      "Committee": "CCCF",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXC 58-2005",
+      "Title": "Code of Hygienic Practice for Meat",
+      "Committee": "CCMPH",
+      "LastModified": 2005
+    },
+    {
+      "Reference": "CXC 57-2004",
+      "Title": "Code of Hygienic Practice for Milk and Milk Products",
+      "Committee": "CCFH",
+      "LastModified": 2009
+    },
+    {
+      "Reference": "CXC 56-2004",
+      "Title": "Code of Practice for the Prevention and Reduction of Lead Contamination in Foods",
+      "Committee": "CCCF",
+      "LastModified": 2004
+    },
+    {
+      "Reference": "CXC 55-2004",
+      "Title": "Code of Practice for the Prevention and Reduction of Aflatoxin Contamination in Peanuts",
+      "Committee": "CCCF",
+      "LastModified": 2004
+    },
+    {
+      "Reference": "CXC 54-2004",
+      "Title": "Code of Practice on Good Animal Feeding",
+      "Committee": "TFAF",
+      "LastModified": 2024
+    },
+    {
+      "Reference": "CXC 53-2003",
+      "Title": "Code of Hygienic Practice for Fresh Fruits and Vegetables",
+      "Committee": "CCFH",
+      "LastModified": 2003
+    },
+    {
+      "Reference": "CXC 52-2003",
+      "Title": "Code of Practice for Fish and Fishery Products",
+      "Committee": "CCFFP",
+      "LastModified": 2019
+    },
+    {
+      "Reference": "CXC 5-1971",
+      "Title": "Code of Hygienic Practice for Dehydrated Fruits and Vegetables including Edible Fungi",
+      "Committee": "CCPFV",
+      "LastModified": 1971
+    },
+    {
+      "Reference": "CXC 51-2003",
+      "Title": "Code of Practice for the Prevention and Reduction of Mycotoxin Contamination in Cereals",
+      "Committee": "CCCF",
+      "LastModified": 2017
+    },
+    {
+      "Reference": "CXC 50-2003",
+      "Title": "Code of Practice for the Prevention and Reduction of Patulin Contamination in Apple Juice and Apple Juice Ingredients in Other Beverages ",
+      "Committee": "CCCF",
+      "LastModified": 2003
+    },
+    {
+      "Reference": "CXC 49-2001",
+      "Title": "Code of Practice Concerning Source Directed Measures to Reduce Contamination of Food with Chemicals",
+      "Committee": "CCCF",
+      "LastModified": 2001
+    },
+    {
+      "Reference": "CXC 48-2001",
+      "Title": "Code of Hygienic Practice for Bottled/Packaged Drinking Waters (Other than Natural Mineral Waters)",
+      "Committee": "CCFH",
+      "LastModified": 2001
+    },
+    {
+      "Reference": "CXC 47-2001",
+      "Title": "Code of Hygienic Practice for the Transport of Food in Bulk and Semi-Packed Food",
+      "Committee": "CCFH",
+      "LastModified": 2001
+    },
+    {
+      "Reference": "CXC 46-1999",
+      "Title": "Code of Hygienic Practice for Refrigerated Packaged Foods with Extended Shelf Life",
+      "Committee": "CCFH",
+      "LastModified": 1999
+    },
+    {
+      "Reference": "CXC 45-1997",
+      "Title": "Code of Practice for the Reduction of Aflatoxin B1 in Raw Materials and Supplemental Feedingstuffs for Milk-Producing Animals",
+      "Committee": "CCCF",
+      "LastModified": 1997
+    },
+    {
+      "Reference": "CXC 44-1995",
+      "Title": "Code of Practice for Packaging and Transport of Fresh Fruit and Vegetables",
+      "Committee": "CCFFV",
+      "LastModified": 2004
+    },
+    {
+      "Reference": "CXC 43R-1995",
+      "Title": "Regional Code of Hygienic Practice for the Preparation and Sale of Street Foods (Latin America and the Caribbean)",
+      "Committee": "CCLAC",
+      "LastModified": 1995
+    },
+    {
+      "Reference": "CXC 4-1971",
+      "Title": "Code of Hygienic Practice for Desiccated Coconut",
+      "Committee": "CCPFV",
+      "LastModified": 1971
+    },
+    {
+      "Reference": "CXC 40-1993",
+      "Title": "Code of Hygienic Practice for Aseptically Processed and Packaged Low-Acid Foods",
+      "Committee": "CCFH",
+      "LastModified": 1993
+    },
+    {
+      "Reference": "CXC 39-1993",
+      "Title": "Code of Hygienic Practice for Precooked and Cooked Foods in Mass Catering",
+      "Committee": "CCFH",
+      "LastModified": 1993
+    },
+    {
+      "Reference": "CXC 36-1987",
+      "Title": "Code of Practice for the Storage and Transport of Edible Fats and Oils in Bulk",
+      "Committee": "CCFO",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXC 33-1985",
+      "Title": "Code of Hygienic Practice for Collecting, Processing and Marketing of Natural Mineral Waters",
+      "Committee": "CCFH",
+      "LastModified": 1985
+    },
+    {
+      "Reference": "CXC 3-1969",
+      "Title": "Code of Hygienic Practice for Dried Fruits",
+      "Committee": "CCPFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXC 30-1983",
+      "Title": "Code of Hygienic Practice for the Processing of Frog Legs",
+      "Committee": "CCFH",
+      "LastModified": 1983
+    },
+    {
+      "Reference": "CXC 23-1979",
+      "Title": "Code of Hygienic Practice for Low and Acidified Low Acid Canned Foods",
+      "Committee": "CCFH",
+      "LastModified": 1979
+    },
+    {
+      "Reference": "CXC 22-1979",
+      "Title": "Code of Hygienic Practice for Groundnuts (Peanuts)",
+      "Committee": "CCPFV",
+      "LastModified": 1979
+    },
+    {
+      "Reference": "CXC 2-1969",
+      "Title": "Code of Hygienic Practice for Canned Fruit and Vegetable Products",
+      "Committee": "CCPFV",
+      "LastModified": 2011
+    },
+    {
+      "Reference": "CXC 20-1979",
+      "Title": "Code of Ethics for International Trade in Food including Concessional and Food Aid Transactions.",
+      "Committee": "CCGP",
+      "LastModified": 1979
+    },
+    {
+      "Reference": "CXC 19-1979",
+      "Title": "Code of Practice for Radiation Processing of Food",
+      "Committee": "CCFH",
+      "LastModified": 1979
+    },
+    {
+      "Reference": "CXC 15-1976",
+      "Title": "Code of Hygienic Practice for Eggs and Egg Products",
+      "Committee": "CCFH",
+      "LastModified": 1985
+    },
+    {
+      "Reference": "CXC 1-1969",
+      "Title": "General Principles of Food Hygiene",
+      "Committee": "CCFH",
+      "LastModified": 2022
+    },
+    {
+      "Reference": "CXA 6-2025",
+      "Title": "List of Codex Specifications for Food Additives",
+      "Committee": "CCFA",
+      "LastModified": 2026
+    },
+    {
+      "Reference": "CXA 5-1993",
+      "Title": "Glossary of Terms and Definitions (Residues of Veterinary Drugs in Foods)",
+      "Committee": "CCRVDF",
+      "LastModified": 2021
+    },
+    {
+      "Reference": "CXA 4-1989",
+      "Title": "Classification of Foods and Animal Feeds",
+      "Committee": "CCPR",
+      "LastModified": 2025
+    },
+    {
+      "Reference": "CXA 2-1976",
+      "Title": "Statement on Infant Feeding",
+      "Committee": "CCNFSDU",
+      "LastModified": 1976
+    }
+  ],
+  "removed": [],
+  "modified": [],
+  "recents": [
+    {
+      "Reference": "CXS 95-1981",
+      "Title": "Standard for Quick Frozen Lobsters",
+      "Committee": "CCFFP",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 94-1981",
+      "Title": "Standard for Canned Sardines and Sardine-Type Products",
+      "Committee": "CCFFP",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 90-1981",
+      "Title": "Standard for Canned Crab Meat",
+      "Committee": "CCFFP",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 86-1981",
+      "Title": "Standard for Cocoa Butter",
+      "Committee": "CCCPC",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 70-1981",
+      "Title": "Standard for Canned Tuna and Bonito",
+      "Committee": "CCFFP",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 60-1981",
+      "Title": "Standard for Canned Raspberries",
+      "Committee": "CCPFV",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 37-1991",
+      "Title": "Standard for Canned Shrimps or Prawns",
+      "Committee": "CCFFP",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 370-2026",
+      "Title": "Standard for baker’s yeast",
+      "Committee": "CCFA",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 369-2026",
+      "Title": "Standard for spices in the form of dried seeds – requirements for coriander",
+      "Committee": "CCSCH",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 368-2026",
+      "Title": "Standard for spices in the form of dried fruits and berries – requirements for large cardamom",
+      "Committee": "CCSCH",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 367-2026",
+      "Title": "Standard for spices derived from dried or dehydrated fruits and berries – requirements for vanilla",
+      "Committee": "CCSCH",
+      "LastModified": 2026,
+      "Type": 5
+    },
+    {
+      "Reference": "CXS 366-2026",
+      "Title": "Standard for fresh curry leaves",
+      "Committee": "CCFFV",
+      "LastModified": 2026,
+      "Type": 5
+    }
+  ],
+  "indexed": 15,
+  "indexedRefs": [
+    "CXS 98-1981",
+    "CXS 92-1981",
+    "CXS 89-1981",
+    "CXS 88-1981",
+    "CXS 95-1981",
+    "CXS 90-1981",
+    "CXS 94-1981",
+    "CXS 76-1981",
+    "CXS 74-1981",
+    "CXS 97-1981",
+    "CXS 96-1981",
+    "CXS 86-1981",
+    "CXS 73-1981",
+    "CXS 75-1981",
+    "CXS 87-1981"
+  ]
+}

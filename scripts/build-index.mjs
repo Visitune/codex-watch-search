@@ -13,11 +13,17 @@ if (!fs.existsSync(src)) {
 }
 const raw = JSON.parse(fs.readFileSync(src, "utf-8"));
 const samplesDir = path.join(process.cwd(), "data", "samples");
+const corpusDir = path.join(process.cwd(), "data", "corpus");
 const docs = (raw.standards ?? raw.Standards ?? []).map((d, id) => {
   const key = d.Reference.replace(/[^A-Za-z0-9]/g, "_") + "_en.txt";
   let Text = "";
-  const samplePath = path.join(samplesDir, key);
-  if (fs.existsSync(samplePath)) Text = fs.readFileSync(samplePath, "utf-8").slice(0, 12000);
+  // corpus prioritaire (extract-all), fallback samples
+  for (const dir of [corpusDir, samplesDir]) {
+    const p = path.join(dir, d.Reference.replace(/[^A-Za-z0-9]/g, "_") + ".txt");
+    const p2 = path.join(dir, key);
+    if (fs.existsSync(p)) { Text = fs.readFileSync(p, "utf-8").slice(0, 15000); break; }
+    if (fs.existsSync(p2)) { Text = fs.readFileSync(p2, "utf-8").slice(0, 15000); break; }
+  }
   return {
     id,
     Reference: d.Reference,
