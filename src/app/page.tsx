@@ -68,6 +68,10 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
           <div>
             <h1 className="text-xl font-semibold tracking-tight">Codex Watch & Search</h1>
             <p className="text-sm text-zinc-500">Textes officiels Codex Alimentarius — veille & recherche plein texte (EN/FR prio)</p>
+            <div className="mt-2 flex gap-2">
+              <Link href="/watch" className="text-xs px-3 py-1 rounded-full bg-amber-500 text-white hover:bg-amber-600">Bulletin Watch →</Link>
+              <a href="/api/catalog" target="_blank" className="text-xs px-3 py-1 rounded-full border">API catalog</a>
+            </div>
           </div>
           <div className="text-xs text-zinc-500 text-right">
             <div>Snapshot: {totalCount} docs • {fetchedAt ? new Date(fetchedAt).toLocaleDateString("fr-FR") : "—"}</div>
