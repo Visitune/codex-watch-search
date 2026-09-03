@@ -17,15 +17,15 @@ export function Header() {
           </div>
           <div className="leading-none">
             <div className="font-extrabold tracking-tight text-[15px] text-[#0B1120] dark:text-white">CODEX <span className="text-[#F97316]">WATCH</span></div>
-            <div className="text-[11px] font-mono tracking-widest text-[#6B7280] dark:text-white/60">ALIMENTARIUS • FTS HYBRIDE</div>
+            <div className="text-[11px] font-mono tracking-widest text-[#6B7280] dark:text-white/60">PORTAIL PROFESSIONNEL</div>
           </div>
         </Link>
         <nav className="hidden md:flex items-center gap-1">
           {[
             { href: "/", label: "Catalogue" },
-            { href: "/watch", label: "Watch" },
-            { href: "/ask", label: "Ask" },
-            { href: "/dashboard", label: "Dashboard" },
+            { href: "/watch", label: "Veille" },
+            { href: "/ask", label: "Questions" },
+            { href: "/dashboard", label: "Tableau de bord" },
           ].map((l) => (
             <Link key={l.href} href={l.href} className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${isActive(l.href) ? "bg-[#0B1120] dark:bg-white text-white dark:text-[#0B1120]" : "text-[#374151] dark:text-white/70 hover:bg-black/[0.06] dark:hover:bg-white/[0.06]"}`}>
               {l.label}

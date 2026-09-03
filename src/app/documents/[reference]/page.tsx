@@ -30,8 +30,9 @@ function pdfUrl(doc: RawDoc, lang: string): string | null {
   return `https://codex.fao.org/restapi/searchstandard/${encodeURIComponent(f)}?lang=${lang}&id=${doc.SharePointId}`;
 }
 
-export default function DocPage({ params }: { params: { reference: string } }) {
-  const ref = decodeURIComponent(params.reference);
+export default async function DocPage({ params }: { params: Promise<{ reference: string }> }) {
+  const { reference } = await params;
+  const ref = decodeURIComponent(reference);
   const doc = loadOne(ref);
   if (!doc) notFound();
   const langs = ["en", "fr", "es", "zh", "ru", "ar"] as const;

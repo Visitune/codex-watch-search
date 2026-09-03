@@ -41,11 +41,12 @@ function pdfUrl(doc: RawDoc, lang: "en" | "fr"): string | null {
   return `https://codex.fao.org/restapi/searchstandard/${encodeURIComponent(f)}?lang=${lang}&id=${doc.SharePointId}`;
 }
 
-export default function Home({ searchParams }: { searchParams: { q?: string; type?: string; committee?: string } }) {
+export default async function Home({ searchParams }: { searchParams: Promise<{ q?: string; type?: string; committee?: string }> }) {
+  const sp = await searchParams;
   const { standards, totalCount, fetchedAt } = loadCatalog();
-  const q = (searchParams?.q ?? "").toLowerCase();
-  const type = searchParams?.type ?? "";
-  const committee = searchParams?.committee ?? "";
+  const q = (sp?.q ?? "").toLowerCase();
+  const type = sp?.type ?? "";
+  const committee = sp?.committee ?? "";
 
   let filtered = standards;
   if (type) filtered = filtered.filter((s) => String(s.Type) === type);
@@ -166,7 +167,7 @@ export default function Home({ searchParams }: { searchParams: { q?: string; typ
           <div className="flex flex-col lg:flex-row gap-3">
             <div className="flex-1 relative">
               <Icons.search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-[#9CA3AF]" />
-              <input name="q" defaultValue={searchParams?.q ?? ""} placeholder="Rechercher: CXC 1-1969, allergène, HACCP, Listeria, CCFH..." className="w-full h-11 pl-10 pr-3 rounded-xl bg-[#F8F9FC] dark:bg-[#0B1120] border border-[#E5E7EB] dark:border-white/10 text-sm placeholder:text-[#9CA3AF] focus:outline-none focus:border-[#F97316]/40 focus:ring-4 focus:ring-[#F97316]/10" />
+              <input name="q" defaultValue={sp?.q ?? ""} placeholder="Rechercher: CXC 1-1969, allergène, HACCP, Listeria, CCFH..." className="w-full h-11 pl-10 pr-3 rounded-xl bg-[#F8F9FC] dark:bg-[#0B1120] border border-[#E5E7EB] dark:border-white/10 text-sm placeholder:text-[#9CA3AF] focus:outline-none focus:border-[#F97316]/40 focus:ring-4 focus:ring-[#F97316]/10" />
             </div>
             <div className="flex gap-3">
               <div className="relative flex-1 lg:w-[200px]">
