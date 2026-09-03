@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/header";
 import { Icons } from "@/components/icons";
+import { buildOfficialUrl, buildFaoLegacyUrl } from "@/lib/codex-connector";
 
 type RawDoc = {
   Reference: string;
@@ -70,9 +71,18 @@ export default async function DocPage({ params }: { params: Promise<{ reference:
           </div>
         </div>
 
+        <div className="mt-4 flex flex-wrap gap-2">
+          <a href={buildOfficialUrl(doc.Reference)} target="_blank" rel="noopener noreferrer" className="h-10 inline-flex items-center gap-2 px-4 rounded-full bg-[#0B1120] dark:bg-white text-white dark:text-[#0B1120] text-sm font-bold hover:opacity-90">
+            Voir sur codex.fao.org (officiel) <Icons.external className="h-4 w-4" />
+          </a>
+          <a href={buildFaoLegacyUrl(doc.Reference)} target="_blank" rel="noopener noreferrer" className="h-10 inline-flex items-center gap-2 px-4 rounded-full bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/10 text-sm font-bold">
+            Fiche FAO legacy <Icons.external className="h-4 w-4" />
+          </a>
+        </div>
+
         <div className="mt-4 rounded-2xl bg-white dark:bg-[#131B2C] border border-[#E5E7EB] dark:border-white/[0.06] p-5">
           <h3 className="text-sm font-bold text-[#0B1120] dark:text-white">Informations</h3>
-          <p className="mt-2 text-xs leading-relaxed text-[#6B7280] dark:text-white/60">Texte officiel du Codex Alimentarius. Pour toute question d’interprétation, référez-vous au document PDF officiel ci-dessus. Ce portail est un service indépendant de veille et de recherche.</p>
+          <p className="mt-2 text-xs leading-relaxed text-[#6B7280] dark:text-white/60">Texte officiel du Codex Alimentarius. Pour toute question d’interprétation, référez-vous au document PDF officiel ci-dessus ou à la fiche officielle sur codex.fao.org. Ce portail est un service indépendant de veille et de recherche.</p>
         </div>
       </div>
     </div>

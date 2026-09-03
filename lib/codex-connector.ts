@@ -90,6 +90,14 @@ export function buildPdfUrl(raw: CodexRawDocument, lang: "en" | "fr"): string | 
   return `https://codex.fao.org/restapi/searchstandard/${encodeURIComponent(file)}?lang=${lang}&id=${raw.SharePointId}`;
 }
 
+export function buildOfficialUrl(reference: string): string {
+  return `https://codex.fao.org/codex-texts/find-a-codex-text`;
+}
+
+export function buildFaoLegacyUrl(reference: string): string {
+  return `https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?provide=standards&orderField=reference&orderVal=asc&search=${encodeURIComponent(reference)}`;
+}
+
 export interface CodexSource {
   fetchCatalog(): Promise<CodexLoadFilterResponse>;
 }

@@ -6,6 +6,7 @@ import { Icons } from "@/components/icons";
 import { Footer } from "@/components/footer";
 import { FadeIn, Stagger, CardItem } from "@/components/animated";
 import { miniSearch } from "@/lib/search";
+import { buildOfficialUrl, buildFaoLegacyUrl } from "@/lib/codex-connector";
 
 type RawDoc = {
   Reference: string;
@@ -243,7 +244,8 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
                     <Link href={`/documents/${encodeURIComponent(doc.Reference)}`} className="h-8 inline-flex items-center gap-1.5 px-3 rounded-full border border-[#E5E7EB] dark:border-white/10 text-xs font-bold hover:bg-[#F8F9FC] dark:hover:bg-white/[0.06] transition-colors">
                       Détails <Icons.arrowRight className="h-3.5 w-3.5" />
                     </Link>
-                    <span className="ml-auto hidden md:inline-flex items-center gap-1 text-xs font-mono text-[#9CA3AF]"><span className="h-2 w-2 rounded-full bg-emerald-500 inline-block" /> Officiel</span>
+                    <a href={buildOfficialUrl(doc.Reference)} target="_blank" rel="noopener noreferrer" title="Voir sur codex.fao.org (officiel)" className="h-8 inline-flex items-center gap-1.5 px-3 rounded-full bg-white dark:bg-[#0B1120] border border-[#E5E7EB] dark:border-white/10 text-xs font-bold hover:bg-[#F8F9FC] dark:hover:bg-white/[0.06]">Officiel <Icons.external className="h-3.5 w-3.5" /></a>
+                    <a href={buildFaoLegacyUrl(doc.Reference)} target="_blank" rel="noopener noreferrer" title="Fiche FAO legacy" className="hidden lg:inline-flex h-8 items-center gap-1 px-2 rounded-full text-xs font-mono text-[#9CA3AF] hover:text-[#F97316]">FAO</a>
                   </div>
                 </CardItem>
               );
