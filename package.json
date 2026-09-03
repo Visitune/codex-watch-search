@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
     "db:migrate": "drizzle-kit migrate",
+    "db:seed": "tsx scripts/seed.ts",
     "collector:discovery": "tsx scripts/poc_fetch.mjs",
     "collector:snapshot": "tsx scripts/snapshot.ts"
   },
