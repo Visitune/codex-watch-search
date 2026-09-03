@@ -11,6 +11,9 @@
     "db:push": "drizzle-kit push",
     "db:migrate": "drizzle-kit migrate",
     "db:seed": "tsx scripts/seed.ts",
+    "build:index": "node scripts/build-index.mjs",
+    "build:db": "node scripts/build-db.mjs",
+    "build:hybrid": "npm run build:index && npm run build:db && npm run build",
     "collector:discovery": "tsx scripts/poc_fetch.mjs",
     "collector:snapshot": "tsx scripts/snapshot.ts"
   },
@@ -18,11 +21,13 @@
     "@vercel/blob": "^1.0.0",
     "@vercel/postgres": "^0.10.0",
     "drizzle-orm": "^0.38.0",
+    "minisearch": "^7.2.0",
     "next": "16.3.4",
     "pdf-parse": "^2.4.5",
     "postgres": "^3.4.5",
     "react": "19.2.8",
     "react-dom": "19.2.8",
+    "sql.js": "^1.14.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
