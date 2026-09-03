@@ -9,10 +9,16 @@ function loadCatalog() {
   return { docs: raw.standards ?? raw.Standards ?? [], fetchedAt: raw.fetchedAt };
 }
 function loadMeta() {
-  try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "search-meta.json"), "utf-8")); } catch { return { count: 0, withText: 0 }; }
+  for (const p of [path.join(process.cwd(), "public", "search-meta.json"), path.join(process.cwd(), "data", "search-meta.json")]) {
+    try { return JSON.parse(fs.readFileSync(p, "utf-8")); } catch {}
+  }
+  return { count: 0, withText: 0 };
 }
 function loadBulletin() {
-  try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "watch-bulletin.json"), "utf-8")); } catch { return null; }
+  for (const p of [path.join(process.cwd(), "public", "watch-bulletin.json"), path.join(process.cwd(), "data", "watch-bulletin.json")]) {
+    try { return JSON.parse(fs.readFileSync(p, "utf-8")); } catch {}
+  }
+  return null;
 }
 function loadCorpus() {
   try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "corpus", "meta.json"), "utf-8")); } catch { return {}; }
